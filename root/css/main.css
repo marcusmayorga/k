@@ -171,23 +171,32 @@ footer .socialContainer {
     margin: 0;
     display: block;
   }
+  .headerContain {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
   .logoContain {
     width: fit-content;
     padding-top: 55px;
-    margin: 0 0 0 20px;
+    margin: 0;
     display: inline-block;
   }
   /*  NAV BAR */
   nav {
     display: inline-block;
-    width: 58%;
+    width: 690px;
   }
   .navbar-nav {
     display: block;
   }
   .navbar {
-    height: 63px;
-    margin: 0 0 -10px 20px;
+    height: 40px;
+    margin: 5px 0 -13px 0;
+    float: right;
+  }
+  header {
+    height: 175px;
   }
   .navbar a {
     float: left;
@@ -218,11 +227,40 @@ footer .socialContainer {
   .carousel {
     height: 600px;
   }
+  footer {
+    height: 300px;
+  }
+  .footerContain {
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+    clear: both;
+  }
+  footer .infoContainer {
+    width: 300px;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    float: left;
+  }
+  footer .socialContainer {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
   .footerCopy {
       text-align: left;
   }
   .footerCopy li {
     display: inline-block;
     padding-right: 70px;
+  }
+}
+@media only screen and (min-width:996px) {
+.navbar {
+margin: 65px 0 -13px 0;
+  }
+  header {
+    height: 135px;
   }
 }
