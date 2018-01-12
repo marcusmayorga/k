@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="css/normalize.min.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-
+  <script src="scripts/jquery.min.js" type="text/javascript"></script>
+  <script src="scripts/navScript.js" type="text/javascript"></script>
   <!-- INDIVIDUAL PAGE CSS -->
 
 </head>
@@ -30,7 +31,40 @@
   </div>
 
 <!---NAVIGATION--->
-  <nav>
+<nav class="navbar">
+  <span class="open-slide">
+    <a href="#" onclick="openSlideMenu()">
+      <svg width="30" height="30">
+        <path d="M0,5 30,5" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#fff"
+          stroke-width="5"/>
+      </svg>
+    </a>
+</span>
+  <ul class="navbar-nav">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Specials</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Appointments</a></li>
+  </ul>
+</nav>
+
+<div id="side-menu" class="side-nav">
+  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Specials</a>
+  <a href="#">Contact</a>
+  <a href="#">Appointments</a>
+</div>
+</header>
+  <!-- <nav>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -39,11 +73,11 @@
       <li><a href="#">Contact</a></li>
       <li><a href="#">Appointments</a></li>
     </ul>
-  </nav>
+  </nav> -->
 
   <!---NAVIGATION------>
 
-</header>
+
 
 
   <!--  START INDIVIDUAL PAGE CONTENT -->
@@ -89,6 +123,17 @@
     </ul>
     </div>
 </div>
+<script>
+  function openSlideMenu() {
+    document.getElementById('side-menu').style.width = '250px';
 
+    document.getElementById('header').style.marginLeft = '250px';
+  }
+
+  function closeSlideMenu() {
+    document.getElementById('side-menu').style.width = '0';
+    document.getElementById('header').style.marginLeft = '0';
+  }
+</script>
 </body>
 </html>
