@@ -16,17 +16,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 .contactFixed {
- display: none;
- text-align: right;
- border-bottom: 1px solid #fff;
-}
-.contactFixed ul {
-  padding: 0 20px 10px 0;
-  margin-top: 5px;
-}
-.contactFixed ul li {
-  display: inline-block;
-  padding: 0 15px;
+  display: none;
 }
 header {
   background: linear-gradient(to right, #99826c , #82705e);
@@ -39,6 +29,7 @@ header {
   width: fit-content;
   padding-top: 55px;
   margin: 0 auto;
+  display: block;
 }
 .logoContain h1 {
   color: #fff;
@@ -157,7 +148,19 @@ footer .socialContainer {
 }
 
 /* //////FOR DESKTOP:////// */
-@media only screen and (min-width: 594px) {
+@media only screen and (min-width: 700px) {
+  .contactFixed {
+   text-align: right;
+   border-bottom: 1px solid #fff;
+  }
+  .contactFixed ul {
+    padding: 7px 0 0 0;
+    margin-top: 5px;
+  }
+  .contactFixed ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
   .contactFixed {
     background-color:rgb(0,0,0);
     opacity:0.3;
@@ -172,18 +175,19 @@ footer .socialContainer {
     width: fit-content;
     padding-top: 55px;
     margin: 0 0 0 20px;
+    display: inline-block;
   }
   /*  NAV BAR */
+  nav {
+    display: inline-block;
+    width: 58%;
+  }
   .navbar-nav {
     display: block;
-    padding-left: 200px;
   }
   .navbar {
-    background: linear-gradient(to right, #99826c , #82705e);
-    overflow: hidden;
     height: 63px;
-    border: 2px solid red;
-    z-index: 5;
+    margin: 0 0 -10px 20px;
   }
   .navbar a {
     float: left;
@@ -198,30 +202,27 @@ footer .socialContainer {
     text-transform: uppercase;
   }
   .navbar ul {
-    /* margin: 20px; */
     list-style: none;
   }
   .navbar a:hover {
     border: 3px solid #fff;
     border-radius: 15px;
+    margin-top: -3px;
+    margin-left: -3px;
+    margin-right: 12px;
   }
-    .open-slide{
+  .open-slide{
       display: none;
-    }
+  }
     /* END NAV BAR */
-    .carousel {
-      clear: both;
-    }
+  .carousel {
+    height: 600px;
+  }
   .footerCopy {
       text-align: left;
-      }
+  }
   .footerCopy li {
     display: inline-block;
     padding-right: 70px;
   }
-  .group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 }
