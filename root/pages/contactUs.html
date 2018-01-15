@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kalli Alexa Skincare</title>
+  <!-- [if It IE9]>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+  <link rel="stylesheet" href="../css/normalize.min.css" type="text/css">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="../scripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../scripts/navScript.js" type="text/javascript"></script>
+  <!-- INDIVIDUAL PAGE CSS -->  
+  <link rel="stylesheet" href="../css/contactUs.css" type="text/css">
+</head>
+<body>  
+<div class="container">
+  <div class="contactFixed">
+    <ul>
+      <li>(760) 356-0325</li>|
+      <li>kallialexaskincare@gmail.com</li>
+    </ul>
+  </div>
+<header>
+  <div class="headerContain">
+  <div class="logoContain">
+    <h1>Kalli Alexa</h1>
+    <h2>Skin Care</h2>
+  </div>
+
+<!---NAVIGATION--->
+<nav class="navbar">
+  <span class="open-slide">
+    <a href="#" onclick="openSlideMenu()">
+      <svg width="30" height="30">
+        <path d="M0,5 30,5" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#fff"
+          stroke-width="5"/>
+      </svg>
+    </a>
+</span>
+  <ul class="navbar-nav">
+    <div class="group">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Specials</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Appointments</a></li>
+  </div>
+  </ul>
+</nav>
+<div id="side-menu" class="side-nav">
+  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Specials</a>
+  <a href="#">Contact</a>
+  <a href="#">Appointments</a>
+</div>
+</div>
+</header>
+ 
+  <!--  START INDIVIDUAL PAGE CONTENT -->
+ <div class="carousel">
+		<div class="imgCarousel"> 
+		</div> 
+	</div>
+  
+  	<section class="sectionContact">	  
+  	   <article class="articleContact"> 
+ 	      <div class="dataContact">     	  	  
+  	      	<ul>  
+     	  	 <h2>Kalli Alexa Location</h2> 
+     	  	 <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> 
+     	 	  Sola Salon 5726 La Jolla Blvd.<br>La Jolla, California 92037</li>  <br>    	 	    
+       	 	  <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+       	  	  kallialexaskincare@gmail.com</li> 
+       	   	  <li><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 
+       	  	 (760) 356-0325</li>         
+    	 	</ul> 
+    	  </div> <!-- End of div dataContact -->
+    	  <!-- Map location --> 
+    	   
+		  <div class="mapContact">   
+  		  <div id="map"></div>  
+  		  </div>    
+    		 <script>
+      			function initMap() {    
+					var latlng = {lat: 32.816434, lng: -117.271263};
+					var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 15,         
+          			center: latlng
+        		});  
+				var marker = new google.maps.Marker({
+            	position: latlng, 
+				map: map
+				});
+				}
+    		 </script>  
+   	   		 <script async defer
+   			 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoXCDnycwrsc7_DKmDauw5kJbYPQdp2h4&callback=initMap">
+		   </script>	     
+	   </article> <!-- End of articleContact -->
+	   
+	   <article class="asideContact"> 	   
+	   <form action="mailto:name@domain.com" method="post" id="mainContentForm" enctype="text/plain"> 
+             <div>               
+            	 <fieldset>            
+             		 <legend>Your Information</legend>
+               			 <ul>                     
+                 		   <li>                      
+                     		  <label for="fName">First Name</label>  
+                     		  <input type="text" id="fName" name="first_name" placeholder="Your first name" required autofocus="">                          
+                  		  </li>    
+                   		  <li>
+                     		  <label for="lName"> Last Name</label>
+                      		  <input type="text" id="lName name" name="last_name" placeholder="Your last name" required>   
+                   		  </li> 
+                  		  <li> 
+                   		    <label for="email"> Email:</label>    
+                     		<input type="email" id="email" name="email" placeholder="yourName@domain.com" required> 
+                   		  </li>
+                   		  <li>
+                   		    <label for="phone">Phone:</label>
+                    		<input type="tel" id="phone" name="phone" placeholder="888-123-4567">
+                   		  </li>  
+                    	  <li>   
+                      		 <p class="req">denotes required field.&nbsp;</p>  
+                   		  </li>                        
+                 		</ul>  
+                 </fieldset>           
+               </div> 
+                       
+               <div class="formSectionInterests" >   
+                  <fieldset>            
+            	 	 <legend>How did you hear about us ?</legend> 
+                		 <select name="reference" id="reference">
+                      	   <!-- option-->                           
+                           <option value="anotherClient">Another client</option>
+                           <option value="internet">Internet</option>                          
+                           <option value="localAd">Local Ad</option>
+                           <option value="newspaper">Newspaper</option>
+                           <option value="radio">Radio</option>  
+                           <option value="none">None all this</option>                            
+						 </select>   
+				  </fieldset> 
+           	    </div>                 		                 
+             		
+                <div class="formSectionInterests" id="formSectionSrv"> 
+                  <fieldset>            
+            	   	 <legend>Select the services you're interested in :</legend>                   
+                     <ul class="radioListContact"> 
+                         <li><input type="checkbox" name="service" id="skc" value="skc"><label for="skc">Skin care</label></li>
+                         <li><input type="checkbox" name="service" id="btr" value="btr"><label for="btr">Body treatment</label></li> 
+                         <li><input type="checkbox" name="service" id="wxg" value="wxg"><label for="wxg">Waxing</label></li>
+                         <li><input type="checkbox" name="service" id="eys" value="eys"><label for="eys">Eye lashes</label></li>   
+                         <li><input type="checkbox" name="service" id="mkp" value="mkp"><label for="mkp">Makeup Artist</label></li>   
+                     </ul> 
+				  </fieldset>                                            
+                 </div>           
+                               
+                 <div class="formSectionInterests" id="formSectionSpc">  
+                   <fieldset>            
+            	     <legend>Sign-up for our specials !</legend>                      
+                     <ul class="radioListContact"> 
+                         <li><input type="radio" id="emailListYes" name="emailList" value="yes" checked><label for="emailListYes">Yes</label></li> 
+                         <li><input type="radio" id="emailListNo" name="emailList" value="no">
+                         <label for="emailListNo">Not at this time</label></li>
+                     </ul> 
+                    </fieldset>  
+                 </div>    
+                      
+                 <div class="textareaContact"> 
+                    	 <h3>Inquiry/Comments/Questions</h3>                      
+                     	 <textarea name="msg" id="msg" placeholder="Please write your message here..."></textarea> 
+                 </div>     
+                     
+                 <div class="buttonContact"> 
+                    	 <input type="reset" id="reset" class="button" value="Reset">   
+                     	 <input type="submit" id="submit" class="button" value="Submit it">
+                 </div>     
+                  
+  	  </form>  <!-- End of form -->   
+  </article> <!-- End of article asideContact -->   	
+   
+  </section>
+  <!-- END INDIVIDUAL PAGE CONTENT -->
+
+
+  <footer>
+    <div class="footerContain"> 
+        <div class="infoContainer">
+        <ul>
+          <h2>Kalli Alexa Location</h2>
+          <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>Sola Salon 5726 La Jolla Blvd.<br>
+            La Jolla, California 92037</li>
+
+          <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>kallialexaskincare@gmail.com
+          </li>
+
+          </ul>
+        </div>
+
+        <div class="socialContainer">
+          <h2>Find Us On Social Media</h2>
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+
+  </footer>
+   <div class="footerCopy">
+    <ul>
+      <li>Copyright &copy; 2017 Kalli Alexa Skincare</li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    </div>
+</div>
+</body>
+</html>
