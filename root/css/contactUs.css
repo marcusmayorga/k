@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
+/* MGRM 
+//////FONTS//////
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+//////COLORS//////
+#346469
+#5ca2aa
+#a6b0c0 - GRAY
+*/
+
+
+/* //////MOBILE FIRST:////// */
+* {     
+    padding: 0; 
+}   
+  
+.carousel {
+  height: 200px; 
+  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
+}
+.imgCarousel { 
+	height: 200px;    
+	background: url(../images/contact/contacImg.png) center no-repeat; 
+} 
+section { 
+	display: flex;
+    flex-direction: column; 
+}
+article:after {
+    content: "";
+    clear: both;
+    display: block;
+} 
+section li {
+	list-style-type: none;
+}  
+.sectionContact {     
+  width: 100%; 
+  margin: 0 auto;
+  height: 100%;    
+  font-family: 'Raleway', sans-serif; 
+} 
+.articleContact {	 
+	  
+	padding-left: 5px; 
+	padding-right: 5px;  
+} 
+.dataContact {
+	margin: 0 auto; 	 
+} 
+h2 {text-align: center;}   
+h3 {
+	font-size: 1em;
+	font-family: 'Quicksand', sans-serif;  
+	color: #82705e; 
+}
+.dataContact li {	   
+	line-height: normal; 
+	text-align: center;
+} 
+.mapContact {    
+   margin-top: 8px;  
+   margin-right: 8px;      	
+}
+#map {     	 
+   height: 300px;
+   width: 100%;         
+}  
+.asideContact {  
+	margin-left: 5px;
+	margin-right: 5px;   
+}
+/* Begin FORM Styling ---------------------------*/
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+:-ms-input-placeholder {
+    color: #ccc;
+} 
+::-moz-placeholder {
+    color: #ccc;
+} 
+::placeholder {
+    color: #ccc; 
+}
+fieldset{  	 
+    margin: .95em .95em;     
+    border-top:  solid 1px #5e6262;  	
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}  
+legend{ 
+    padding: 0 .5em;  
+    color: #000;      
+	font-size: 1.17em;  
+}
+label {
+	margin: .5em 0 .2em; 
+	font-size: 1em;	 
+	color: #000; 
+	display: block;   
+} 
+input[type="radio"], input[type="checkbox"], input[type="reset"], input[type="submit"] {
+    width: auto;
+}    
+input {  
+	font-size: .85em;
+	padding: .25em;
+    margin-right: .5em;
+    width: 100%;   
+    border: solid 1px #98a0a0;      
+    color: #98a0a0; 
+}
+form ul { 
+	margin-top: .45em;   
+	margin-bottom: -.15em;   
+}
+/* Validation on the fields of the Form */ 
+.asideContact input:required {
+    background: url(../images/contact/contactAster.png) no-repeat 98% 7px;
+    background-size: 2.5%; 
+} 
+.asideContact input:focus:invalid {
+    background: url(../images/contact/contactErr.png) no-repeat 98% 7px;
+    background-size: 2.5%;
+    border-color: #346469;     	 
+	background-color: #f0efef;
+}
+input:required:valid  { 
+    border-color: #98a0a0;   
+}
+/* End of validation on the fields of the Form */
+p.req {  
+    background: url(../images/contact/contactAster.png) no-repeat 135px 5px; 
+    background-size: 2.5%;          
+    color: #42413c;                         
+    font-size: 80%;      
+    text-align: left; 
+    vertical-align: text-bottom;
+    padding-top: 2.5px;
+    padding: .25em;
+    margin-right: .5em;  	  
+} 
+select#reference { 
+	font-size: .85em; 	
+	margin-top: .45em;   
+	margin-bottom: .45em;   
+	padding-top: .25em; 
+	padding-bottom: .25em;    
+    width: 100%;  
+    border: solid 1px #98a0a0;    
+    color: #6b6e6e;   
+}  
+
+.radioListContact label   { 
+    display: inline-block;
+    margin: 0; 
+}  
+.textareaContact h3 {
+	margin-top: 20px; 
+	margin-left: 15px; 
+	margin-bottom: .5em; 
+	font-size: 1em;
+	color: #42413c;     
+}   
+textarea  {        
+    color: #6b6e6e;      
+    padding: .25em;   
+    width: 90%;  
+    min-height: 6em; 
+    border: solid 1.4px #5e6262;
+	-moz-border-radius:8px;  
+    -webkit-border-radius:8px;	
+    border-radius:8px;	  
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: .95em; 
+} 
+.buttonContact {
+	display: flex;  
+	justify-content: flex-end;
+    align-content:space-between; 
+	margin-top: 5px; 
+	margin-bottom: 5px;
+}   
+input.button{ 	 
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;  
+    color: #fff;  
+    padding: .25em .5em; 
+    border-radius: 8px;  
+	background: linear-gradient(to right, #99826c , #82705e);    
+	text-align: center;	 
+}  
+input.button:hover {    
+    background-color: #5ca2aa; 
+    color: white;    
+}  
+/* //////ENDS MOBILE ////// */
+
+/* ////// MOBILE SMALL DEVICES ////// */
+@media screen and  (max-width: 394px) { 
+	legend {
+		font-size: .95em;
+	}
+	label { 
+		font-size: .85em;
+	}
+	.textareaContact h3 {
+		font-size: .95em;
+	}
+	.textareaContact {
+		font-size: .95em;	     
+	} 
+    p.req {    
+   		background: url(../images/contact/contactAster.png) no-repeat 135px 5px;  
+   		background-size: 2.6%;              
+    }  
+	input.button {
+		font-size: .95em;
+	}	 
+} 
+
+@media screen and (min-width: 395px) and (max-width: 464px) {   
+    p.req {    
+   		background: url(../images/contact/contactAster.png) no-repeat 135px 5px;  
+   		background-size: 2.6%;              
+    }   
+	.buttonContact {	 
+		padding-right: 10px;  	 
+	}   
+}
+@media screen and (min-width: 465px) and (max-width: 500px) {  
+    .asideContact input:required {
+    	background: url(../images/contact/contactAster.png) no-repeat 98% 6px;
+    	background-size: 2.5%;   
+    }  
+    .asideContact input:focus:invalid  {
+   		background: url(../images/contact/contactErr.png) no-repeat 98% 6px;
+    	background-size: 2.5%;    
+    }     
+    p.req {     
+    	background: url(../images/contact/contactAster.png) no-repeat 136px 4px;  
+   		background-size: 2.6%;              
+    }  
+	textarea{ 
+		width: 92%; 
+	}	 
+}
+/*End for media queries for a device of (min-width: 465px) and (max-width: 500px)--------*/
+
+@media screen and (min-width: 501px) and (max-width: 560px) {   
+    .asideContact input:required {
+    	background: url(../images/contact/contactAster.png) no-repeat 98% 6px;
+   		background-size: 2.1%;     
+    }       
+    .asideContact input:focus:invalid  { 
+   		background: url(../images/contact/contactErr.png) no-repeat 98% 6px;
+   		background-size: 2.1%;         
+    }       
+    /* End of Validation on the fields of the Form */ 
+    p.req {         
+    	background: url(../images/contact/contactAster.png) no-repeat 136px 3px;
+    	background-size: 2.4%;              
+	}  
+	textarea{
+		width: 92%; 
+	}	
+	.buttonContact {	 
+		padding-right: 6px;   	  
+	}       
+} 
+/*End media queries for a device of (min-width: 501px) and (max-width: 560px)--------*/
+ 
+/*End media queries for a device of (min-width: 561px) and (max-width: 599px)--------*/
+@media screen and (min-width: 561px) and (max-width: 599px) {   
+    .asideContact input:required {
+    	background: url(../images/contact/contactAster.png) no-repeat 99% 6px;
+   		background-size: 2.1%;    
+    }    
+    .asideContact input:focus:invalid  {
+   		background: url(../images/contact/contactErr.png) no-repeat 99% 6px;
+   		background-size: 2.1%;    
+    }  
+    /* End of Validation on the fields of the Form */
+    p.req {         
+    	background: url(../images/contact/contactAster.png) no-repeat 136px 3px;
+    	background-size: 2.1%;           
+	}  
+	textarea{
+		width: 92%; 
+	}	
+	.buttonContact {	 
+		padding-right: 6px;   	  
+	}       
+} 
+/*End media queries for a device of (min-width: 561px) and (max-width: 599px)--------*/
+ 
+/*End media queries for a device of (min-width: 600px) and (max-width: 640px)--------*/
+@media screen and (min-width: 600px) and (max-width: 649px) {   	
+    .asideContact input:required {
+    	background: url(../images/contact/contactAster.png) no-repeat 99% 6px;
+   		background-size: 2%;    
+    }    
+    .asideContact input:focus:invalid  {
+   		background: url(../images/contact/contactErr.png) no-repeat 99% 6px;
+   		background-size: 2%;     
+    }  
+    /* End of Validation on the fields of the Form */
+    p.req {         
+    	background: url(../images/contact/contactAster.png) no-repeat 136px 3px;
+    	background-size: 2.1%;           
+	}  	
+	textarea{
+		width: 94%;  
+		
+	}	
+	.buttonContact {	 
+		padding-right: 6px;   	  
+	}       
+} 
+/*End media queries for a device of (min-width: 600px) and (max-width: 649px)--------*/
+
+ /*End media queries for a device of (min-width: 600px) and (max-width: 730px)--------*/
+@media screen and (min-width: 650px) and (max-width: 729px) {   
+	 .sectionContact {
+	    margin-top: 10px;
+	    margin-bottom: 10px; 
+        flex-direction: row;         
+        flex-wrap: wrap;    		 
+    }
+    article {        
+        flex-basis: 45%;    
+    } 	
+	article.articleContact{
+		padding: 0 15px;   
+	}
+	article.asideContact{		 
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 10px;
+	}	 
+	.mapContact {    
+  		 margin-top: 30px;   
+		 padding-left: 20px;   		   	
+	}  
+	#map {     	 
+  	 	height: 450px;
+  	 	width: 110%;            
+	}  	   
+	form li{   
+    width: 100%; 
+    float: left;    
+    margin-right: 5%;   
+	} 	 
+	fieldset {
+    margin: .95em .75em;
+	} 
+	legend { 
+		font-size: .85em;
+	}
+	label { 
+		font-size: .85em;
+	}
+	.textareaContact h3 {
+		font-size: .95em;
+	}
+	.textareaContact {
+		font-size: .95em;	
+		width: 100%;   
+	}    
+	input.button {
+		font-size: .85em; 
+	}	   	  
+    .asideContact input:required {
+    	background: url(../images/contact/contactAster.png) no-repeat 98% 6px;
+   		background-size: 4%;    
+    }    
+    .asideContact input:focus:invalid  {
+   		background: url(../images/contact/contactErr.png) no-repeat 98% 6px;
+   		background-size: 4%;      
+    }   
+    /* End of Validation on the fields of the Form */
+    p.req {         
+    	background: url(../images/contact/contactAster.png) no-repeat 136px 3px;
+    	background-size: 4%;            
+	}  
+	textarea{
+		width: 89%;     
+	}	    
+	.buttonContact {	   
+		padding-right: 3px;      	  
+	}         
+} 
+/*End media queries for a device of (min-width: 650px) and (max-width: 729px)--------*/
+
+/*Start media queries for a device of (min-width: 730px) and (max-width: 829px)--------*/
+@media screen and (min-width: 730px) and (max-width: 829px) {    
+   .sectionContact {
+	    margin-top: 10px;
+	    margin-bottom: 10px; 
+        flex-direction: row;         
+        flex-wrap: wrap;    		 
+    }
+    article {        
+        flex-basis: 45%;    
+    } 
+	
+	article.articleContact{
+		padding: 0 15px;   
+	}
+	article.asideContact{		 
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 10px;
+	}	 
+	.mapContact {    
+  		 margin-top: 30px;   
+		 padding-left: 20px;   		   	
+	}  
+	#map {     	 
+  	 	height: 450px;
+  	 	width: 110%;            
+	}  	   
+	form li{   
+    width: 100%; 
+    float: left;    
+    margin-right: 5%;   
+	} 
+	 
+	fieldset {
+    margin: .95em .75em;
+	} 
+	legend { 
+		font-size: .85em;
+	}
+	label { 
+		font-size: .85em;
+	}
+	.textareaContact h3 {
+		font-size: .95em;
+	}
+	.textareaContact {
+		font-size: .95em;	
+		width: 100%;   
+	}    
+	input.button {
+		font-size: .85em; 
+	}	   	 
+    .asideContact input:required {
+    background: url(../images/contact/contactAster.png) no-repeat 98% 8px;
+    background-size: 3.3%;     
+    }      
+    .asideContact input:focus:invalid  {   
+    background: url(../images/contact/contactErr.png) no-repeat 98% 8px;
+    background-size: 3.3%;     
+    }     
+	p.req {         
+    background: url(../images/contact/contactAster.png) no-repeat 136px 4px; 
+    background-size: 3.8%;        
+    }     
+    /* End of Validation on the fields of the Form */    	  
+	.buttonContact {	 
+		padding-right: 2px;    	  
+	}       
+} 
+/*End media queries for a device of (min-width: 730px) and (max-width: 829px)--------*/
+
+/*Start media queries for a device of (min-width: 830px) and (max-width: 855px)--------*/
+@media screen and (min-width: 830px) and (max-width: 855px) { 
+	.sectionContact {
+	    margin-top: 10px;
+	    margin-bottom: 10px; 
+        flex-direction: row;         
+        flex-wrap: wrap;    		 
+    }
+    article {        
+        flex-basis: 45%;    
+    } 
+	
+	article.articleContact{
+		padding: 0 15px;   
+	}
+	article.asideContact{		 
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 15px; 
+	}	 
+	.mapContact {    
+  		 margin-top: 30px;   
+		 padding-left: 20px;   		   	
+	}  
+	#map {     	 
+  	 	height: 450px;
+  	 	width: 110%;            
+	}  	   
+	form li{   
+    width: 100%; 
+    float: left;    
+    margin-right: 5%;   
+	} 
+	 
+	fieldset {
+    margin: .95em .75em;
+	} 
+	legend { 
+		font-size: .85em;
+	}
+	label { 
+		font-size: .85em;
+	}
+	.textareaContact h3 {
+		font-size: .95em;
+	}
+	.textareaContact {
+		font-size: .95em;	
+		width: 100%;   
+	}    
+	input.button {
+		font-size: .85em; 
+	}	   	 
+	.asideContact input:required {
+    background: url(../images/contact/contactAster.png) no-repeat 98% 8px;
+    background-size: 2.8%;     
+    }      
+    .asideContact input:focus:invalid  {   
+    background: url(../images/contact/contactErr.png) no-repeat 98% 8px;
+    background-size: 2.8%;     
+    }     
+	p.req {         
+    background: url(../images/contact/contactAster.png) no-repeat 136px 4px; 
+    background-size: 3%;         
+    }     
+	.buttonContact {	 
+		padding-right: 2px;    	  
+	}  
+}
+/*End media queries for a device of (min-width: 830px) and (max-width: 855px)--------*/
+
+ /*Start media queries for a device of (min-width: 856px) and (max-width: 999px)--------*/
+@media screen and (min-width: 856px) and (max-width: 999px) {    
+   section {
+        flex-direction: row;          
+        flex-wrap: wrap;   		 
+    }
+    article {        
+        flex-basis: 45%;  
+    } 	 
+	article.articleContact{
+		padding: 0 15px;  
+	}
+	article.asideContact{		 
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-left: 5px;
+	}	 
+	.mapContact {    
+  		 margin-top: 20px;   
+		 padding-left: 10px;   		   	
+	}  
+	#map {     	 
+  	 	height: 400px;
+  	 	width: 100%;          
+	}  	   
+	form li{  
+    width: 45%; 
+    float: left;   
+    margin-right: 5%;  
+	} 
+	 
+	fieldset {
+    margin: .95em .75em;
+	} 
+	legend {
+		font-size: .95em;
+	}
+	label { 
+		font-size: .85em;
+	}
+	.textareaContact h3 {
+		font-size: .95em;
+	}
+	.textareaContact {
+		font-size: .95em;	
+		width: 100%;   
+	}    
+	input {
+		font-size: .85em;
+	} 
+	input.button {
+		font-size: .95em;  
+	}	   	  
+    .asideContact input:required {
+    background: url(../images/contact/contactAster.png) no-repeat 97% 5px;
+    background-size: 5%;     
+    }      
+    .asideContact input:focus:invalid  { 
+    background: url(../images/contact/contactErr.png) no-repeat 97% 5px;
+    background-size: 5%;   
+    }      
+	p.req {         
+    background: url(../images/contact/contactAster.png) no-repeat 135px 4px; 
+    background-size: 5.4%;         
+    }        
+    /* End of Validation on the fields of the Form */    	   
+	.buttonContact {	 
+		padding-right: 7px; 	 	 
+	}        
+} 
+/*End media queries for a device of (min-width: 856px) and (max-width: 999px)--------*/ 
+
+/*Start media queries for a device of min-width: 1000px--------*/
+@media screen and (min-width: 1000px) and (max-width: 1100px) { 	
+	section {
+        flex-direction: row;         
+        flex-wrap: wrap;   		 
+    }
+    article {        
+        flex-basis: 45%; 
+    } 	 
+	article.articleContact{
+		padding: 0 20px; 
+	}
+	article.asideContact{
+		padding: 0 25px; 
+	}	
+	.mapContact {    
+  		 margin-top: 20px;  
+		 padding-left: 30px;   		   	
+	}  
+	#map {     	 
+  	 	height: 400px;
+  	 	width: 100%;          
+	}  	   
+	form li{  
+    width: 45%; 
+    float: left;   
+    margin-right: 5%;  
+	}    
+	  	 
+    .asideContact input:required {
+    background: url(../images/contact/contactAster.png) no-repeat 97% 5px;
+    background-size: 5%;     
+    }    
+    .asideContact input:focus:invalid  { 
+    background: url(../images/contact/contactErr.png) no-repeat 97% 5px;
+    background-size: 5%;  
+    }   
+    /* End of Validation on the fields of the Form */
+    p.req {         
+    background: url(../images/contact/contactAster.png) no-repeat 136px 4px; 
+    background-size: 5.8%;      
+    }    
+	input.button {
+		font-size: .95em;  
+	}	 
+	textarea{
+		width: 93%;  
+	}	  
+	.buttonContact {	 
+		padding-right: 2px;    	  
+	}      
+}
+/*End of media queries for a device of (min-width: 1000px) and (max-width: 1100px) { 	------*/
+
+/*Start media queries for a device min-width: 1101px--------*/
+@media screen and (min-width: 1101px) { 	
+	 section {
+        flex-direction: row;         
+        flex-wrap: wrap;   		 
+    }
+    article {        
+        flex-basis: 45%; 
+    } 	 
+	article.articleContact{
+		padding: 0 20px; 
+	}
+	article.asideContact{
+		padding: 0 25px; 
+	}	
+	.mapContact {    
+  		 margin-top: 20px;  
+		 padding-left: 30px;   		   	
+	}  
+	#map {     	 
+  	 	height: 400px;
+  	 	width: 100%;          
+	}  	   
+	form li{  
+    width: 45%; 
+    float: left;   
+    margin-right: 5%;  
+	}    
+	  	 
+    .asideContact input:required {
+    background: url(../images/contact/contactAster.png) no-repeat 97% 5px;
+    background-size: 5%;     
+    }    
+    .asideContact input:focus:invalid  { 
+    background: url(../images/contact/contactErr.png) no-repeat 97% 5px;
+    background-size: 5%;  
+    }   
+    /* End of Validation on the fields of the Form */
+    p.req {         
+    background: url(../images/contact/contactAster.png) no-repeat 136px 4px; 
+    background-size: 5.8%;      
+    }     
+	textarea{
+		width: 93%;  
+	}	  
+	.buttonContact {	 
+		padding-right: 2px;    	  
+	}      
+	
+	
+}
