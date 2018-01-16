@@ -99,6 +99,9 @@ imageContainer{
     background-color: rgba(255, 255, 255, .7);
 }
 
+#service_img {
+    max-width:100%
+}
 
 
 .sidemenu {
@@ -113,13 +116,13 @@ imageContainer{
     text-decoration: none;
 }
 
-/*
+
 .sidemenu ul li {
     display: inline-block;
     padding-bottom: 0;
     width: 100%;
 }
-*/
+
 
 
 .sidemenu a {
@@ -148,6 +151,32 @@ imageContainer{
     position: relative;
     text-transform: capitalize;
 }
+
+
+
+/*  Breakpoint 1 (iPhone 6+): 414px*/
+@media only screen and (max-width: 414px) 
+
+
+imageContainer{
+    background: url(../images/services/zen-wallpaper-hd-1b.jpg) no-repeat top left fixed;
+/*    background-size: cover;*/
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+#service_img {
+    max-width:100%
+}
+
+
+
+
+
+
+
+  
+
 
 
 /*************** END MEL'S CODE *****************/
@@ -334,3 +363,26 @@ margin: 65px 0 -13px 0;
     height: 135px;
   }
 }
+
+/************* MEL's MEDIA QUERY ************************/
+
+/*  Breakpoint 1 (iPhone 6+): 414px     */
+@media only screen and (max-width: 414px) 
+
+
+imageContainer{
+    background: url(../images/services/zen-wallpaper-hd-1b.jpg) no-repeat top left fixed;
+/*    background-size: cover;*/
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+#service_img {
+    max-width:100%
+}
+
+    
+    
+    
+    
+@media screen and (min-width: 1500px) and (max-width: 1999px) {   
