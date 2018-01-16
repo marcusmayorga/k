@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400,700');
 /*
 //////FONTS//////
 font-family: 'Quicksand', sans-serif;
@@ -91,6 +91,10 @@ header li a {
 .navbar-nav {
   display: none;
 }
+
+/* -----END NAVIGATION----- */
+
+
 /*************** MEL'S CODE *****************/
 imageContainer{
     background: url(../images/services/zen-wallpaper-hd-1b.jpg) no-repeat top left fixed;
@@ -105,25 +109,22 @@ imageContainer{
 
 
 .sidemenu {
-    width: 300px;
-    margin-top: 50px;
-    margin-left: 100px;
+    width: 225px;
+    margin-left: 75px;
     z-index: 1;
-    top: 50px;
-    left: 10px;
     overflow-x: hidden;
-    padding: 8px 0;
     text-decoration: none;
 }
 
 
 .sidemenu ul li {
     display: inline-block;
-    padding-bottom: 0;
     width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 6px;
+    padding-left: 20px;
 }
-
-
 
 .sidemenu a {
     padding: 6px 8px 6px 16px;
@@ -154,20 +155,83 @@ imageContainer{
 
 
 
+.service-sec {
+/*    border: solid 1px red;*/
+    display: inline-block;
+/*    padding-bottom: 0;*/
+    width: 370px;
+    margin: 15px 25px 0 25px; 
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+#borders{
+    display: block;
+    max-width:100%;
+    text-align: center;
+/*    margin: 15px 25px 0 25px; */
+}
+
+section h2 {č
+    text-align: center;
+    padding-bottom: 5px;
+        -webkit-margin-after: -0.5em;
+}
+
+section h4 {
+    text-align: center;
+/*    padding-top: 5px;*/
+    -webkit-margin-before: -.13em;
+    -webkit-margin-after: -.13em;
+
+}
+.service-fee{
+    text-align: center;
+    color: #aa7c4c;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+.duration {
+    text-align: center;
+    padding: 0;
+}
+.service_images{
+    -webkit-margin-before: 2em;
+    width: 150px;
+    height: 150px;
+}
+
+article p{
+    text-align: left;
+    margin-right: 25px;
+    padding-bottom: 25px;
+    width: 350px
+}
+
+.request-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #775d42;
+    color: #fff;
+/*  border-radius: 21px;*/
+    border-radius: 0 10px 0 10px;
+
+}
+
+
+
+
+
+
+
+
+
 /*  Breakpoint 1 (iPhone 6+): 414px*/
 @media only screen and (max-width: 414px) 
 
 
-imageContainer{
-    background: url(../images/services/zen-wallpaper-hd-1b.jpg) no-repeat top left fixed;
-/*    background-size: cover;*/
-    height: 100%;
-    background-color: rgba(255, 255, 255, .7);
-}
 
-#service_img {
-    max-width:100%
-}
 
 
 
@@ -187,7 +251,7 @@ imageContainer{
 
 
 
-/* -----END NAVIGATION----- */
+
 .carousel {
   height: 200px;
   background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
@@ -199,7 +263,7 @@ footer {
   height: 425px;
   background-color: #346469;
   color: #fff;
-  padding-top: 50px;
+/*  padding-top: 50px;*/
 }
 footer .infoContainer {
   width: 300px;
@@ -355,7 +419,8 @@ footer .socialContainer {
     padding-right: 70px;
   }
 }
-@media only screen and (min-width:996px) {
+
+@media only screen and (min-width:415px) and (min-width:699px) {
 .navbar {
 margin: 65px 0 -13px 0;
   }
@@ -367,22 +432,11 @@ margin: 65px 0 -13px 0;
 /************* MEL's MEDIA QUERY ************************/
 
 /*  Breakpoint 1 (iPhone 6+): 414px     */
-@media only screen and (max-width: 414px) 
+/*@media only screen and (max-width: 414px) */
 
-
-imageContainer{
-    background: url(../images/services/zen-wallpaper-hd-1b.jpg) no-repeat top left fixed;
-/*    background-size: cover;*/
-    height: 100%;
-    background-color: rgba(255, 255, 255, .7);
-}
-
-#service_img {
-    max-width:100%
-}
 
     
-    
+   
     
     
 @media screen and (min-width: 1500px) and (max-width: 1999px) {   
