@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
+/*
+//////FONTS//////
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+//////COLORS//////
+#346469
+#5ca2aa
+#a6b0c0 - GRAY
+*/
+
+main, section, aside, article, header, footer, nav, video, audio, figure {
+    display: block;
+}
+
+/* //////MOBILE FIRST:////// */
+body {
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+.contactFixed {
+  display: none;
+}
+header {
+  background: linear-gradient(to right, #99826c , #82705e);
+  width: 100%;
+  height: 145px;
+  margin: 0;
+  padding: 10px, 0, 10px, 10px;
+}
+.logoContain {
+  width: fit-content;
+  padding-top: 55px;
+  margin: 0 auto;
+  display: block;
+}
+.logoContain h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 2.5em;
+}
+.logoContain h2 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1em;
+  margin: 0;
+  text-align: right;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header li a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+/* -----NAVIGATION----- */
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  color: #fff;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 40px;
+  margin-left: 50px;
+}
+.navbar-nav {
+  display: none;
+}
+/*************** MEL'S CODE *****************/
+imageContainer{
+    background: url(../images/services/zen-wallpaper-hd-1b.jpg) no-repeat top left fixed;
+/*    background-size: cover;*/
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+
+
+.sidemenu {
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+    z-index: 1;
+    top: 50px;
+    left: 10px;
+    overflow-x: hidden;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+/*
+.sidemenu ul li {
+    display: inline-block;
+    padding-bottom: 0;
+    width: 100%;
+}
+*/
+
+
+.sidemenu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidemenu a:hover {
+    color: #064579;
+}
+
+
+.sidemenu li a {
+    background: #fff;
+    border-style: solid;
+    border-width: 1px 0 0;
+    border-color: #f2f2f2;
+    color: #181818;
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+/*************** END MEL'S CODE *****************/
+
+
+
+
+
+
+
+/* -----END NAVIGATION----- */
+.carousel {
+  height: 200px;
+  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
+}
+section {
+  height: 500px;
+}
+footer {
+  height: 425px;
+  background-color: #346469;
+  color: #fff;
+  padding-top: 50px;
+}
+footer .infoContainer {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+footer .infoContainer ul {
+   list-style-type: none;
+  padding: 0;
+}
+footer .infoContainer li {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+footer .socialContainer {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.fa {
+  margin: 10px;
+  font-size: 20px;
+
+}
+.fa-facebook, .fa-twitter, .fa-instagram{
+  color: #99826c;
+}
+.footerCopy {
+  background: linear-gradient(to right, #99826c , #82705e);
+  height: 160px;
+  color: #fff;
+  text-align: center;
+}
+.footerCopy ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 80px;
+}
+.footerCopy li a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+}
+
+/* //////FOR DESKTOP:////// */
+@media only screen and (min-width: 700px) {
+  .contactFixed {
+   text-align: right;
+   border-bottom: 1px solid #fff;
+  }
+  .contactFixed ul {
+    padding: 7px 0 0 0;
+    margin-top: 5px;
+  }
+  .contactFixed ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .contactFixed {
+    background-color:rgb(0,0,0);
+    opacity:0.3;
+    height: 40px;
+    color: #fff;
+    position: fixed;
+    min-width: 100%;
+    margin: 0;
+    display: block;
+  }
+  .headerContain {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .logoContain {
+    width: fit-content;
+    padding-top: 55px;
+    margin: 0;
+    display: inline-block;
+  }
+  /*  NAV BAR */
+  nav {
+    display: inline-block;
+    width: 690px;
+  }
+  .navbar-nav {
+    display: block;
+  }
+  .navbar {
+    height: 40px;
+    margin: 5px 0 -13px 0;
+    float: right;
+  }
+  header {
+    height: 175px;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 15px;
+    text-transform: uppercase;
+  }
+  .navbar ul {
+    list-style: none;
+  }
+  .navbar a:hover {
+    border: 3px solid #fff;
+    border-radius: 15px;
+    margin-top: -3px;
+    margin-left: -3px;
+    margin-right: 12px;
+  }
+  .open-slide{
+      display: none;
+  }
+    /* END NAV BAR */
+  .carousel {
+    height: 600px;
+  }
+  footer {
+    height: 300px;
+  }
+  .footerContain {
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+    clear: both;
+  }
+  footer .infoContainer {
+    width: 300px;
+    text-align: center;
+    margin: 0;
+    display: inline-block;
+    float: left;
+  }
+  footer .socialContainer {
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  .footerCopy {
+      text-align: left;
+  }
+  .footerCopy li {
+    display: inline-block;
+    padding-right: 70px;
+  }
+}
+@media only screen and (min-width:996px) {
+.navbar {
+margin: 65px 0 -13px 0;
+  }
+  header {
+    height: 135px;
+  }
+}
