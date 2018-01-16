@@ -1,3 +1,4 @@
+
 # ka_skincare
 
 KA-skincare is a project that focuses on building a webpage from the ground up.
@@ -7,6 +8,11 @@ FEATURES::
 	1. Home page
 	2. About 
 	3. Services
+		- Back Treatment
+		- Skin Care
+		- Eyelash Extensions
+		- Waxing
+	
 	4. Specials
 	5. Appointments
 	6. Contact Us
