@@ -12,7 +12,7 @@ KA-skincare is a project that focuses on building a webpage from the ground up.
 		- Eyelash Extensions
 		- Waxing
 		- Makeup Artist
-			- Makeup Classes	
+			- Makeup Lessons	
 	4. Specials
 	5. Appointments
 	6. Contact Us

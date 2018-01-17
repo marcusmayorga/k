@@ -176,12 +176,16 @@ section h2 {č
     padding-bottom: 5px;
         -webkit-margin-after: -0.5em;
 }
-
+.service_images{
+    -webkit-margin-before: 2em;
+    width: 150px;
+    height: 150px;
+}
 section h4 {
     text-align: center;
 /*    padding-top: 5px;*/
-    -webkit-margin-before: -.13em;
-    -webkit-margin-after: -.13em;
+    -webkit-margin-before: -.05em;
+    -webkit-margin-after: -.05em;
 
 }
 .service-fee{
@@ -190,16 +194,13 @@ section h4 {
     font-weight: 700;
     font-size: 20px;
     margin: 0;
+   
+
 }
 .duration {
     text-align: center;
-    padding: 0;
 }
-.service_images{
-    -webkit-margin-before: 2em;
-    width: 150px;
-    height: 150px;
-}
+
 
 article p{
     text-align: left;
