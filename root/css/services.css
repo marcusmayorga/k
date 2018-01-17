@@ -156,9 +156,7 @@ imageContainer{
 
 
 .service-sec {
-/*    border: solid 1px red;*/
     display: inline-block;
-/*    padding-bottom: 0;*/
     width: 370px;
     margin: 15px 25px 0 25px; 
     padding: 10px 10px 10px 10px;
@@ -168,13 +166,12 @@ imageContainer{
     display: block;
     max-width:100%;
     text-align: center;
-/*    margin: 15px 25px 0 25px; */
 }
 
-section h2 {č
+section h2 {
     text-align: center;
     padding-bottom: 5px;
-        -webkit-margin-after: -0.5em;
+/*        -webkit-margin-after: -0.5em;*/
 }
 .service_images{
     -webkit-margin-before: 2em;
@@ -183,7 +180,6 @@ section h2 {č
 }
 section h4 {
     text-align: center;
-/*    padding-top: 5px;*/
     -webkit-margin-before: -.05em;
     -webkit-margin-after: -.05em;
 

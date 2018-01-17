@@ -8,17 +8,17 @@ KA-skincare is a project that focuses on building a webpage from the ground up.
 	2. About 
 	3. Services
 		- Back Treatment
-		- Skin Care
+        - Chemical Peels
 		- Eyelash Extensions
-		- Waxing
 		- Makeup Artist
-			- Makeup Lessons	
+        - Skin Care 
+        - Waxing
 	4. Specials
 	5. Appointments
 	6. Contact Us
 	7. FAQ
 	8. Products
-	9.
-	10.	
+	9. Makeup Lessons
+
 	 
 
