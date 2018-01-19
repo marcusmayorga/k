@@ -1,10 +1,352 @@
+<!--  
+File:  products.html
+Author: Monica Rodriguez 
+date : 01/18/18
+ --> 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
-    <meta charset="UTF-8">
-    <title>Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kalli Alexa Skincare</title>
+  <!-- [if It IE9]>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+  <link rel="stylesheet" href="../css/normalize.min.css" type="text/css">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="../scripts/jquery.min.js" type="text/javascript"></script>
+  <script src="../scripts/navScript.js" type="text/javascript"></script>
+  <!-- INDIVIDUAL PAGE CSS -->  
+  <link rel="stylesheet" href="../css/products.css" type="text/css">	    
 </head>
-<body>
+<body>  
+<div class="container">
+  <div class="contactFixed">
+    <ul>
+      <li>(760) 356-0325 |</li> 
+      <li>kallialexaskincare@gmail.com</li>
+    </ul>
+  </div>
+<header> 
+  <div class="headerContain">
+  <div class="logoContain">
+    <h1>Kalli Alexa</h1>
+    <h2>Skin Care</h2>
+  </div>  
+ 
+<!--NAVIGATION-->
+<nav class="navbar">
+  <span class="open-slide">
+    <a href="#" onclick="openSlideMenu()">
+      <svg width="30" height="30">
+        <path d="M0,5 30,5" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#fff"
+          stroke-width="5"/>
+      </svg>
+    </a>
+</span>
+  <ul class="navbar-nav">
+    <div class="group">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Specials</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Appointments</a></li>
+    </div>
+  </ul>
+</nav>
+<div id="side-menu" class="side-nav">
+  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Specials</a>
+  <a href="#">Contact</a>
+  <a href="#">Appointments</a>
+</div>
+</div>
+</header>
+ 
+  <!--  START INDIVIDUAL PAGE CONTENT -->
+ <div class="carousel">
+		<div class="imgCarousel"> 
+		</div> 
+ </div>  
+  
+  <section>	   
+ 	 <h1>Products</h1>  	
+      
+      
+       <!-- Article for Cleansers -->
+ 	   <article class="cleansers"> 
+           
+ 	     
+		 <div id="title"> 
+            <h2>Cleansers</h2> 
+	     </div>
+	     
+         <!-- Table for Tablet version -->
+ 	     <table cellspacing="0" id="tablet" >  
+           <tr>  
+               <td>               
+               		<img src="../images/products/cleanser/Glycolic-Cleanser_6.5_fruit.png" alt="cleanser1">
+               </td>      
+                <td>  
+                	<h3>Glycolic-Cleanser</h3>
+               		 <p>For all skin types (except rosacea and sensitive skin).  The Glycolic Cleanser is a gel-based foamy cleanser infused with a combination of alpha hydroxy acids. It renews the skin by removing the uppermost layer of dead skin cells to reveal a bright, smooth skin surface.<br/><a href="pages/about.html">Learn more...</a></p> 
+               </td>   
+            </tr>  
+             <tr>   
+               <td>               
+              	 <img src="../images/products/cleanser/Pomegranate-Antioxidant-Cleanser_6.5_fruit.png" alt="cleanser2">  
+               </td> 
+                <td> 
+              		<h3>Pomegranate Antioxidant Cleanser</h3>
+              		<p>For normal to dry skin.  The Pomegranate Antioxidant Cleanser is a moderately rich cream based cleansing option that is infused with a wide array of antioxidants, nutritional elements, and oils to restore and protect the skin.
+               		<br/><a href="pages/food.html">Learn more...</a></p>
+               	</td> 
+              </tr> 
+           <tr>  
+               <td>               
+             	  <img src="../images/products/cleanser/Raspberry-Refining-Cleanser_6.5_fruit.png" alt="cleanser3">               
+               </td>
+               <td>                    
+              	 <h3>Raspberry Refining Cleanser</h3> 
+              	 <p>For normal, combination, oily and acneic skin. The Raspberry Refining Cleanser is a unique foamy cleanser that rebalances and improves skin texture while its active ingredients purify and restore vitality to skin.
+              	 <br/><a href="pages/meet.html">Learn more...</a> </p>
+               </td>                
+           </tr>   
+        </table> <!-- End of Tablet  version -->
+         
+        
+ 	    <!-- Table for Desktop version -->		  
+ 	     <table cellspacing="0" id="desktop" > 
+           <tr> 
+               <td align="center" colspan="3">                   
+               </td>  
+           </tr>
+           <tr>  
+               <td align="center">               
+                    <img src="../images/products/cleanser/Glycolic-Cleanser_6.5_fruit.png" alt="cleanser1">  
+                    <h3>Glycolic-Cleanser</h3>
+                    <p>For all skin types (except rosacea and sensitive skin).  The Glycolic Cleanser is a gel-based foamy cleanser infused with a combination of alpha hydroxy acids. It renews the skin by removing the uppermost layer of dead skin cells to reveal a bright, smooth skin surface.<br/><a href="pages/about.html">Learn more...</a></p> 
+               </td>    
+               <td align="center">               
+                    <img src="../images/products/cleanser/Pomegranate-Antioxidant-Cleanser_6.5_fruit.png" alt="cleanser2">  
+                    <h3>Pomegranate Antioxidant Cleanser</h3>
+                    <p>For normal to dry skin.  The Pomegranate Antioxidant Cleanser is a moderately rich cream based cleansing option that is infused with a wide array of antioxidants, nutritional elements, and oils to restore and protect the skin.
+                    <br/><a href="pages/food.html">Learn more...</a></p></td> 
+               <td align="center">                
+                    <img src="../images/products/cleanser/Raspberry-Refining-Cleanser_6.5_fruit.png" alt="cleanser3">
+                    <h3>Raspberry Refining Cleanser</h3> 
+                    <p>For normal, combination, oily and acneic skin. The Raspberry Refining Cleanser is a unique foamy cleanser that rebalances and improves skin texture while its active ingredients purify and restore vitality to skin.
+                    <br/><a href="pages/meet.html">Learn more...</a> </p>
+               </td>
+           </tr>   
+        </table> <!-- End of Table for Desktop version -->
+           
+         
+        <!-- Div for mobile version -->        
+        <div id="mobile">  	         	  	  
+  	         <img src="../images/products/cleanser/Glycolic-Cleanser_6.5_fruit.png"  alt="cleanser1">  
+  	         <h3 id="mobile">Glycolic-Cleanser</h3>  
+ 	      	 <p>For all skin types (except rosacea and sensitive skin).  The Glycolic Cleanser is a gel-based foamy cleanser infused with a combination of alpha hydroxy acids. It renews the skin by removing the uppermost layer of dead skin cells to reveal a bright, smooth skin surface.<a href="pages/meet.html">Learn more...</a></p>  
+  	    </div>       
+	    <div id="mobile"> 	      	
+ 	      	<img src="../images/products/cleanser/Pomegranate-Antioxidant-Cleanser_6.5_fruit.png" alt="cleanser2"> 
+ 	      	<h3>Pomegranate Antioxidant Cleanser</h3>
+ 	      	<p>For normal to dry skin.  The Pomegranate Antioxidant Cleanser is a moderately rich cream based cleansing option that is infused with a wide array of antioxidants, nutritional elements, and oils to restore and protect the skin.<a href="pages/meet.html">Learn more...</a> </p>    	      	 
+    	 </div>  
+    	 <div id="mobile">           
+            <img src="../images/products/cleanser/Raspberry-Refining-Cleanser_6.5_fruit.png" alt="cleanser3">
+            <h3>Raspberry Refining Cleanser</h3> 
+            <p>For normal, combination, oily and acneic skin. The Raspberry Refining Cleanser is a unique foamy cleanser that rebalances and improves skin texture while its active ingredients purify and restore vitality to skin.
+             <br/><a href="pages/meet.html">Learn more...</a> </p>
+         </div><!-- End of div cleansers -->   
+       </article> <!-- End of article Cleansers --> 
     
+	   
+       <!-- Article for Serums -->
+	   <article class="serums"> 	 
+        <div id="title"> 
+        	 <h2>Serums</h2>  
+        </div>   
+           
+          <!-- Table for Tablet version -->
+ 	     <table cellspacing="0" id="tablet" >  
+           <tr>  
+               <td>               
+               		<img src="../images/products/serum/Vitamin-C-Green-Tea-Serum_1.0_fruit.png" alt="serum1"> 
+               </td>      
+                <td>  
+                	 <h3>Vitamin C Green Tea Serum</h3> 
+               		<p>For all skin types.  The Vitamin C/Green Tea Serum restores and revitalizes the skin with antioxidants and peptides. It nourishes and supplements the skin with moisture and vitamins for ultimate results. The L-ascorbic acid is encapsulated with Hydroxypropyl Cyclodextrin to preserve shelf life.<br/><a href="pages/about.html">Learn more...</a></p> 
+               </td>   
+           </tr>  
+           <tr>   
+               <td>               
+              	 <img src="../images/products/serum/Retinaldehyde-Serum_1.0_fruit.png" alt="serum2">  
+               </td> 
+               <td> 
+              		<h3>Retinaldehyde Serum </h3> 
+              		<p>For all skin types. Vitamins A and B reduce the appearance of fine lines and wrinkles. Brightens skin, reduces blemishes and hyperpigmentation. Increases skin moisture content and soothes skin irritation. 
+                    <br/><a href="pages/food.html">Learn more...</a></p>
+               </td>
+           </tr> 
+           <tr>  
+               <td>               
+             	    <img src="../images/products/serum/Tri-Peptide-Eye-Cream_0.5_fruit.png" alt="serum3">                 
+               </td>
+               <td>                    
+              	    <h3>Tri Peptide Eye Cream</h3>
+              	    <p>For dry skin.  The Tri-Peptide Eye Cream opens the eye zone for a refreshed, youthful appearance. It softens skin and firms the eye area, stimulates circulation and improves tissue strength while encouraging healthy cellular skin functions.active ingredients purify and restore vitality to skin.
+                    <br/><a href="pages/meet.html">Learn more...</a> </p>
+               </td>                                
+           </tr>   
+        </table> <!-- End of Tablet  version -->
+           
+	     <!-- Table for Desktop version -->
+ 	     <table cellspacing="0" id="desktop"> 
+           <tr >  
+               <td>             
+                    <img src="../images/products/serum/Vitamin-C-Green-Tea-Serum_1.0_fruit.png" alt="serum1">   
+                    <h3>Vitamin C Green Tea <br>Serum</h3> 
+                    <p>For all skin types.  The Vitamin C/Green Tea Serum restores and revitalizes the skin with antioxidants and peptides. It nourishes and supplements the skin with moisture and vitamins for ultimate results. The L-ascorbic acid is encapsulated with Hydroxypropyl Cyclodextrin to preserve shelf life.<br/><a href="pages/about.html">Learn more...</a></p> 
+               </td>    
+               <td>                           
+                    <img src="../images/products/serum/Retinaldehyde-Serum_1.0_fruit.png" alt="serum2">
+                    <h3>Retinaldehyde Serum </h3>     
+ 	      	        <p>For all skin types. Vitamins A and B reduce the appearance of fine lines and wrinkles. Brightens skin, reduces blemishes and hyperpigmentation. Increases skin moisture content and soothes skin irritation. 
+                    <br/><a href="pages/food.html">Learn more...</a></p>
+               </td> 
+               <td>                
+                    <img src="../images/products/serum/Tri-Peptide-Eye-Cream_0.5_fruit.png" alt="serum3">  
+                    <h3>Tri Peptide Eye Cream</h3>
+ 	      	        <p>For dry skin.  The Tri-Peptide Eye Cream opens the eye zone for a refreshed, youthful appearance. It softens skin and firms the eye area, stimulates circulation and improves tissue strength while encouraging healthy cellular skin functions.active ingredients purify and restore vitality to skin.
+                    <br/><a href="pages/meet.html">Learn more...</a> </p>
+               </td>
+           </tr>  
+        </table> <!-- End of Table for Desktop version -->  
+          
+	    <!-- Div for mobile version -->	    
+ 	    <div id="mobile"> 	      	 
+ 	      	 <img src="../images/products/serum/Vitamin-C-Green-Tea-Serum_1.0_fruit.png" alt="serum1">  
+ 	      	 <h3>Vitamin C Green Tea Serum</h3>
+ 	      	 <p>For all skin types.  The Vitamin C/Green Tea Serum restores and revitalizes the skin with antioxidants and peptides. It nourishes and supplements the skin with moisture and vitamins for ultimate results. The L-ascorbic acid is encapsulated with Hydroxypropyl Cyclodextrin to preserve shelf life.</p>
+    	</div> <!-- End of div serums -->   	 
+    	 <div id="mobile">	      	 
+ 	      	 <img src="../images/products/serum/Retinaldehyde-Serum_1.0_fruit.png" alt="serum2">
+ 	      	 <h3>Retinaldehyde Serum </h3>  
+ 	      	 <p>For all skin types. Vitamins A and B reduce the appearance of fine lines and wrinkles. Brightens skin, reduces blemishes and hyperpigmentation. Increases skin moisture content and soothes skin irritation. </p> 
+    	</div> <!-- End of div serums -->   
+		 <div id="mobile"> 	      	 
+ 	      	 <img src="../images/products/serum/Tri-Peptide-Eye-Cream_0.5_fruit.png" alt="serum3">
+ 	      	 <h3>Tri Peptide Eye Cream</h3>  
+ 	      	 <p>For dry skin.  The Tri-Peptide Eye Cream opens the eye zone for a refreshed, youthful appearance. It softens skin and firms the eye area, stimulates circulation and improves tissue strength while encouraging healthy cellular skin functions.</p>
+    	</div> <!-- End of div serums -->    	  
+    	  
+	   </article> <!-- End of article serums -->
+	     	
+      
+        <!-- Article for Toners -->
+   	   <article class="toners"> 
+   	      <div id="title"> 
+   	        <h2>Toner</h2>
+   	      </div>   	      
+           
+        <!-- Table for Tablet  version -->
+ 	      <table cellspacing="0" id="tabletToners" >
+           <tr> 
+               <td>                                 
+                    <img src="../images/products/toner/Cucumber-Hydration-Toner_3.3_fruit.png" alt="toner1"> 
+               </td> 
+               <td> 
+                    <h3>Cucumber Hydration Toner</h3>
+ 	      	        <p>For all skin types.  The Cucumber Hydration Toner rehydrates the skin while improving cellular functions and absorption of ingredients. The cucumber soothes and cools irritated skin.<br/><a href="pages/about.html">Learn more...</a></p> 
+               </td>  
+            </tr> 
+            <tr>  
+               <td>               
+                    <img src="../images/products/toner/Mint-Refining-Toner_2.0_fruit.png" alt="toner2">
+               </td>
+               <td> 
+                    <h3>Mint Refining Toner</h3>
+ 	      	        <p>For normal to oily skin. This toner is designed to eliminate environmental debris and irritants. Lemongrass acts as a natural astringent to tighten pores for smooth refreshed skin.   	
+                    <br/><a href="pages/food.html">Learn more...</a></p>
+               </td>                
+            </tr>   
+        </table> <!-- End of Table for table and Desktop version -->   
+           
+   	     <!-- Table for Td able and Desktop version -->
+ 	      <table cellspacing="0" id="desktopToners" >
+           <tr> 
+               <td>                                 
+                    <img src="../images/products/toner/Cucumber-Hydration-Toner_3.3_fruit.png" alt="toner1">  
+                    <h3>Cucumber Hydration Toner</h3>
+ 	      	       <p>For all skin types.  The Cucumber Hydration Toner rehydrates the skin while improving cellular functions and absorption of ingredients. The cucumber soothes and cools irritated skin.<br/><a href="pages/about.html">Learn more...</a></p> 
+               </td>    
+               <td>               
+                    <img src="../images/products/toner/Mint-Refining-Toner_2.0_fruit.png" alt="toner2"> 
+                    <h3>Mint Refining Toner</h3>
+ 	      	        <p>For normal to oily skin. This toner is designed to eliminate environmental debris and irritants. Lemongrass acts as a natural astringent to tighten pores for smooth refreshed skin.   	
+                    <br/><a href="pages/food.html">Learn more...</a></p></td>                
+           </tr>  
+        </table> <!-- End of Table for table and Desktop version -->   
+         
+   	    <!-- Div for mobile version -->   	    
+ 	    <div id="mobile"> 	      	   
+ 	      	 <img src="../images/products/toner/Cucumber-Hydration-Toner_3.3_fruit.png" alt="toner1">   
+ 	      	 <h3>Cucumber Hydration Toner</h3>
+ 	      	 <p>For all skin types.  The Cucumber Hydration Toner rehydrates the skin while improving cellular functions and absorption of ingredients. The cucumber soothes and cools irritated skin.<a href="pages/food.html">Learn more...</a></p>  	  
+  	      	 
+    	</div> <!-- End of div toners -->   	 
+    	 <div id="mobile">	      	  
+ 	      	 <img src="../images/products/toner/Mint-Refining-Toner_2.0_fruit.png" alt="toner2">  
+ 	      	 <h3>Mint Refining Toner</h3> 
+ 	      	 <p>For normal to oily skin. This toner is designed to eliminate environmental debris and irritants. Lemongrass acts as a natural astringent to tighten pores for smooth refreshed skin.<a href="pages/food.html">Learn more...</a></p>  	 	      	 
+    	</div> <!-- End of div toners -->  
+    	  		   
+	   </article> <!-- End of article toners  -->
+	   
+ </section>
+  <!-- END INDIVIDUAL PAGE CONTENT -->
+
+ 
+  <footer>
+    <div class="footerContain"> 
+        <div class="infoContainer">
+        <ul>
+          <h2>Kalli Alexa Location</h2>
+          <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>Sola Salon 5726 La Jolla Blvd.<br>
+            La Jolla, California 92037</li>
+
+          <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>kallialexaskincare@gmail.com
+          </li>
+
+          </ul> 
+        </div>
+
+        <div class="socialContainer">
+          <h2>Find Us On Social Media</h2>
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </div>
+    </div>
+
+  </footer>
+   <div class="footerCopy">
+    <ul>
+      <li>Copyright &copy; 2017 Kalli Alexa Skincare</li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    </div>
+</div>
 </body>
 </html>
