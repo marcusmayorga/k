@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
+/* 
+File:  products.html
+Author: Monica Rodriguez 
+date : 01/18/18
+
+//////FONTS//////
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+//////COLORS//////
+#346469
+#5ca2aa
+#a6b0c0 - GRAY
+*/
+
+
+/* //////MOBILE FIRST:////// */
+* {     
+    padding: 0;  
+	box-sizing: border-box; 
+}   
+.carousel {
+  height: 200px; 
+  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
+}
+.imgCarousel { 
+	height: 200px;    
+	background: url(../images/products/productsImg.jpg) center no-repeat;  
+    display: flex; 
+    align-content: stretch;
+} 
+section { 	
+	width: 100%; 
+	height: 100%; 
+    margin: 0 auto;        
+    font-family: 'Raleway', sans-serif; 
+	display: flex;
+	flex-direction: column;  
+	padding-bottom: 20px;
+}    
+#tablet {  
+	display: none; 
+}   
+#tabletToners {  
+	display: none; 
+} 
+#desktop {  
+	display: none; 
+}  
+#desktopToners {
+    display: none; 
+}
+section h1 {
+	text-align: center;
+}  
+article  h2 { 
+	line-height: 2; 
+	text-align: center;
+	background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
+	color: #fff;
+	font-family: 'Quicksand', sans-serif; 
+}    
+    
+#mobile h3 {
+	padding: 0;  
+	margin: 0;
+	text-align: center;
+	font-size: .90em; 
+	}    
+img { 
+	padding: 0;  	  
+	margin: 0 auto;   
+	padding: 15px;	 
+	width: 400px;   
+	height: 400px;	 	 
+	display: block;
+    max-width: 100%;
+} 
+p {
+	text-align: center;
+	vertical-align: middle;	 
+	margin-left: 25px; 
+	margin-right: 25px;
+	margin-top: 5px; 
+	margin-bottom: 20px;
+	font-size: .95em;
+}
+/* //////ENDS MOBILE ////// */
+
+/* ////// DESKTOP  ////// */  
+ 
+ 
+ /*media queries for a device of (min-width: 600px) and (max-width: 799px)--------*/
+@media screen and (min-width: 600px) and (max-width: 799px){ 
+#tablet { 
+	display: table;   
+} 
+#tabletToners { 
+	display: table;   
+} 
+#tablet h3 {
+	padding: 0;     
+	margin: 0; 
+	margin-left: 25px; 
+	padding-bottom: 5px;
+	text-align: left;
+	font-size: 1em;  
+}	
+#tabletToners h3 {
+	padding: 0;     
+	margin: 0; 
+	margin-left: 25px; 
+	padding-bottom: 5px;
+	text-align: left;
+	font-size: 1em;  
+}	
+#tablet td {
+   width: 50%;
+   align-content: center;
+}
+#tabletToners td {
+   width: 50%;
+   align-content: center;
+}  
+#mobile { 
+	display: none;  
+}	
+#desktopToners {  
+	display: none;  
+}
+img { 	 	 
+	width: 350px;    
+	height: 300px;	    
+} 
+ 
+p {
+	text-align: left;	    
+	font-size: 1.1em;
+	margin-left: 25px;  
+	margin-right: 25px;
+	margin-top: 5px; 
+	margin-bottom: 20px;
+}	
+ 
+
+}    
+/*End media queries for a device of (min-width: 600px) and (max-width: 799px) --------*/
+
+/*media queries for a device of (min-width:800px)--------*/
+@media screen and (min-width: 800px)   {
+section h1 {
+	font-size: 3em;
+}  
+	 
+#desktop { 
+	display: table;  
+}  
+.imgCarousel {   
+	height: 200px;     
+	background: url(../images/products/productsImg.jpg) center/100% no-repeat;  
+    display: flex; 
+    align-content: stretch;
+} 
+#desktop h3 {
+	padding: 0;  
+	margin: 0;
+	text-align: center;
+	font-size: 1.5em;     
+}	
+#desktopToners h3 {
+	padding: 0;   
+	margin: 0;
+	text-align: center;
+	font-size: 1.5em;     
+}	
+#desktop td {   
+   align-items: center;
+} 
+#desktop tr {
+   /*width: 33%; */
+   align-content: center;
+}
+#desktopToners {
+   display: table;      
+} 
+#desktopToners td {  
+   
+   align-content: center;    
+}
+#tableToners { 
+   display: none;     
+}
+#mobile { 
+	display: none;  
+} 
+#desktop img { 	 
+    padding: 0;
+    margin: 0 auto; 
+   /* padding: 15px; */ 	  	 
+	display: block;
+    max-width: 100%; 
+	width: 450px;   
+	height: 350px;	
+    vertical-align: text-top; 
+} 
+#desktopToners img { 	  	 
+	width: 450px;    
+	height: 350px;
+    vertical-align: text-top; 
+} 
+p {
+	text-align: center;
+	vertical-align: middle;
+	margin: 30px;   
+	font-size: 1.2em;
+	 
+}	   
+} 
+/*End media queries for a device of (min-width: 800px)--------*/
+ 
