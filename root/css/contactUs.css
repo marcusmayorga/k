@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
-/* MGRM 
+/* 
+  
+File:  contactUs.css
+Author: Monica Rodriguez 
+date : 01/13/18
+  
 //////FONTS//////
 font-family: 'Quicksand', sans-serif;
 font-family: 'Raleway', sans-serif;
@@ -183,19 +188,22 @@ textarea  {
 	justify-content: flex-end;
     align-content:space-between; 
 	margin-top: 5px; 
-	margin-bottom: 5px;
+	margin-bottom: 5px; 
 }   
-input.button{ 	 
-	font-family: 'Quicksand', sans-serif;
-	font-size: 1em;  
-    color: #fff;  
-    padding: .25em .5em; 
-    border-radius: 8px;  
-	background: linear-gradient(to right, #99826c , #82705e);    
-	text-align: center;	 
-}  
-input.button:hover {    
-    background-color: #5ca2aa; 
+input.button{ 	  	  
+    font-family: 'Raleway', sans-serif;
+    font-size: .85em;    
+    color: #fff;        
+    border-radius: 21px;  
+    padding: 7px;      
+    width: 120px;      
+    border: solid 1px #5e6262;      
+    background: linear-gradient(to right, #99826c , #82705e);        
+    text-align: center;    
+    
+}    
+.button:hover {      
+    background: linear-gradient(to right, #1a0d00 , #82705e);   
     color: white;    
 }  
 /* //////ENDS MOBILE ////// */
