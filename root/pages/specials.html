@@ -1,10 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Specials</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kalli Alexa Skincare</title>
+  <!-- [if It IE9]>
+<script src="../scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!-- BEGIN CSS -->
+  <link rel="stylesheet" href="../css/normalize.min.css" type="text/css">
+  <link rel="stylesheet" href="../css/main.css" type="text/css">
+  <link rel="stylesheet" href="../css/specials.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../css/slick-theme.css"/>
+  <link rel="stylesheet" href="../css/jquery.bxslider.css"> <!-- for BxSlider -->
+  <!-- END CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="../scripts/jquery.min.js"></script>
+  <!-- <script src="scripts/slick.min.js"></script> -->
+  <script src="../js/jquery.bxslider.min.js"> </script><!-- for BxSlider -->
+  <script src="../scripts/navScript.js"></script>
+  <!-- INDIVIDUAL PAGE CSS -->
+ <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+          auto: true
+      });
+    });
+  </script>
 </head>
 <body>
-    
+<div class="container">
+  <div class="contactFixed nav-down">
+    <ul>
+      <li>(760) 356-0325</li>
+      <li>KalliAlexaSkincare@gmail.com</li>
+    </ul>
+  </div>
+<header class="nav-down">
+  <div class="headerContain">
+  <div class="logoContain">
+    <h1>Kalli Alexa</h1>
+    <h2>Skin Care</h2>
+  </div>
+
+<!-- NAVIGATION -->
+
+<span class="open-slide">
+    <a href="#" onclick="openSlideMenu()">
+      <svg width="30" height="30">
+        <path d="M0,5 30,5" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#fff"
+          stroke-width="5"/>
+      </svg>
+    </a>
+</span>
+ <nav class="navbar">
+  <ul class="navbar-nav">
+    <li><a href="#" class="nav-item">Home</a></li>
+    <li><a href="#" class="nav-item">About</a>
+      <div class="nav-content">
+        <div class="nav-sub">
+          <ul>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li><a href="#" class="nav-item">Services</a>
+      <div class="nav-content">
+        <div class="nav-sub">
+          <ul>
+            <li><a href="#">Back Treatment</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Eyelash Extensions</a></li>
+            <li><a href="#">Waxing</a></li>
+            <li><a href="#">Makeup</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </li>
+    <li><a href="pages/products.html" class="nav-item">Products</a></li>
+    <li><a href="pages/specials.html" class="nav-item">Specials</a></li>
+    <li><a href="pages/contactUs.html" class="nav-item">Contact</a></li>
+    <li><a href="pages/appointments.html" class="nav-item">Appointments</a></li>
+  </ul>
+</nav>
+
+<div id="side-menu" class="side-nav">
+  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Products</a>
+  <a href="#">Specials</a>
+  <a href="#">Contact</a>
+  <a href="#">Appointments</a>
+</div>
+</div>
+</header>
+<!-- END NAVIGATION -->
+
+  <!--  START INDIVIDUAL PAGE CONTENT -->
+<!--
+<div class="carousel">
+
+</div>
+-->
+<div class="specialsBanner"></div>
+  <section class="mainContent">
+    <article class="mainContent__welcome">
+
+        <h2>Specials</h2>
+      </article>
+<div class="weeklySpecial">
+  <div class="lipWax"></div>
+  <div class="browApp"></div>
+    <p>Tuesday weekly special: complimentary lip wax with any brow appointment.</p>
+    </div>
+    <div class="monthSpecial">
+      <div class="facialEm"></div>
+    <p>Monthly facial special: Every month I pick a new favorite facial enzyme.</p>
+    <p>It changes month to month. 60 minutes for $85.</p>
+    <p>Checkout my styleseat to get specifics.</p>
+  </div>
+
+
+
+  </section>
+  <!-- END INDIVIDUAL PAGE CONTENT -->
+  <footer>
+    <div class="footerContain">
+        <div class="infoContainer">
+         <h2>Kalli Alexa Location</h2>
+          <ul>
+            <li><a href="https://goo.gl/maps/Ao1eAvpdg8t" target="_blank"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>Sola Salon 5726 La Jolla Blvd.<br />La Jolla, California 92037</a></li>
+            <li><a href="mailto:kallialexaskincare@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>kallialexaskincare@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="socialContainer">
+          <h2>Find Us On Social Media</h2>
+          <a href="https://www.facebook.com/Kallialexaskincare/" title="Facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/?lang=en" title="Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+  </footer>
+   <div class="footerCopy">
+      <ul>
+        <li>Copyright &copy; 2017 Kalli Alexa Skincare</li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slickSlider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
+  <script src="../scripts/hideHeader.js"></script>
+<script type="text/javascript" src="../scripts/slick.min.js"></script>
 </body>
 </html>

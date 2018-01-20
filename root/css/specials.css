@@ -1,0 +1,82 @@
+.mainContent {
+  width: 80%;
+}
+.mainContent__welcome h2 {
+  text-align: left;
+  padding: 0 0 20px 0;
+}
+.specialsBanner {
+  width: 100%;
+  height: 400px;
+  background: url(../images/specials/specialsBanner.jpg) no-repeat center center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+.weeklySpecial {
+  height: 530px;
+  padding: 10px;
+}
+.lipWax {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #a6b0c0;
+  border-radius: 50%;
+  background: url(../images/specials/lipwax.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+}
+.browApp {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #a6b0c0;
+  border-radius: 50%;
+  background: url(../images/specials/eyebrowapp.jpg) no-repeat center center;
+  background-size: cover;
+  display: block;
+  margin: 20px 0 0 0;
+  /* float: right; */
+}
+
+.facialEm {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #a6b0c0;
+  border-radius: 50%;
+  background: url(../images/specials/Hydrating-Moisturizer_1.7_fruit.png) no-repeat center center;
+  background-size: cover;
+}
+
+.monthSpecial {
+  height: 405px;
+  margin: 30px 0 0 0;
+  padding: 10px;
+  clear: both;
+}
+@media only screen and (min-width: 925px) {
+  .lipWax {
+    display: inline-block;
+  }
+  .browApp {
+    display: inline-block;
+    float: right;
+    margin: 0;
+  }
+  .weeklySpecial {
+    height: 300px;
+  }
+  .weeklySpecial p {
+    clear: both;
+  }
+  .monthSpecial {
+    clear: both;
+    height: 405px;
+  }
+  .facialEm {
+    margin: 0 auto;
+  }
+  .mainContent {
+    width: 50%;
+  }
+}
