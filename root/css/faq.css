@@ -10,8 +10,7 @@ date : 01/14/18
  
 //////FONTS//////
 font-family: 'Quicksand', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Cinzel Decorative', cursive;	 
+font-family: 'Raleway', sans-serif;  
 //////COLORS////// 
 #346469
 #5ca2aa
@@ -22,7 +21,7 @@ font-family: 'Cinzel Decorative', cursive;
 /* //////MOBILE FIRST:////// */
 * {     
     padding: 0;  	 
-}    
+}     
 .carousel { 
   max-width: 100%;  
   height: 200px; 
@@ -58,6 +57,7 @@ article {
 }
 #accordion {
 	 margin: 0 auto ; 
+     border: 1px solid #82705e;  
 }
  #accordion.ui-accordion .ui-accordion-content {
 	padding: .85em 1.5em; 
@@ -65,11 +65,9 @@ article {
 }     
 #accordion h3 { 
 	font-family: 'Quicksand', sans-serif; 
-	font-size: 1.1em;   
-	border: 1px solid #a6b0c0; 
-    background: #8c8c8c;  
-	/*border: 1px solid #82705e;
-    background: #82705e; */ 	
+	font-size: 1.1em;    
+	border: 1px solid #82705e;     
+    background: radial-gradient(closest-corner at 60% 55%, #99826c, #82705e); 	 
     font-weight: normal;
     color: #fff; 
 	text-align: left;
@@ -78,9 +76,9 @@ article {
 	width: 100%;	 
 	font-family: 'Quicksand', sans-serif;
 }	
-.textContent h2 {     
-	text-align: center;
-	font-family: 'Cinzel Decorative', cursive;	
+.textContent h1 {     
+	text-align: center; 
+	font-family: 'Quicksand', sans-serif;	
 } 
 article ul{
 	padding-left: 15px;
@@ -144,14 +142,12 @@ article {
 	padding-left: 35px;    
 	padding-right: 35px; 
 	padding-bottom: 40px; 
-}    
+}     
 .imgSide { 	   
 	height: 200px;  
 	background: url(../images/faq/faqImg2.png) center no-repeat;	 
 }  
-.textContent h2 {     
-	font-size: 1.5em;	
-} 
+ 
 #accordion h3 { 	 
 	font-size: 1.2em; 	 
 }

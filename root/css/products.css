@@ -19,7 +19,7 @@ font-family: 'Raleway', sans-serif;
     padding: 0;  
 	box-sizing: border-box; 
 }   
-.carousel {
+.carousel { 
   height: 200px; 
   background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
 }
@@ -37,54 +37,67 @@ section {
 	display: flex;
 	flex-direction: column;  
 	padding-bottom: 20px;
-}    
-#tablet {  
+}   
+section h1 {
+	text-align: center;
+    font-family: 'Quicksand', sans-serif; 
+}  
+.tablet {  
 	display: none; 
 }   
-#tabletToners {  
-	display: none; 
-} 
-#desktop {  
+.desktop {  
 	display: none; 
 }  
+#tabletToners {
+    display: none;  
+}
 #desktopToners {
     display: none; 
 }
-section h1 {
-	text-align: center;
-}  
 article  h2 { 
 	line-height: 2; 
-	text-align: center;
-	background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
-	color: #fff;
-	font-family: 'Quicksand', sans-serif; 
+	text-align: center;	 
+	color: #fff;  
+	font-family: 'Quicksand', sans-serif;
+    background: radial-gradient(closest-corner at 60% 55%, #a18c78, #82705e);  
+    -webkit-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
+    -moz-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
+    box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);  
 }    
     
-#mobile h3 {
+.mobile h3 {
 	padding: 0;  
 	margin: 0;
 	text-align: center;
 	font-size: .90em; 
 	}    
+
 img { 
 	padding: 0;  	  
 	margin: 0 auto;   
 	padding: 15px;	 
 	width: 400px;   
-	height: 400px;	 	 
+	height: 400px;	 	  
 	display: block;
     max-width: 100%;
 } 
-p {
+
+.border img{
+   max-width: 100%;   
+   margin-bottom: 5px;    
+   padding-left: 70px; 
+   padding-right: 70px; 
+}   
+p {  
 	text-align: center;
 	vertical-align: middle;	 
 	margin-left: 25px; 
 	margin-right: 25px;
 	margin-top: 5px; 
 	margin-bottom: 20px;
-	font-size: .95em;
-}
+	font-size: .95em; 
+} 
+
 /* //////ENDS MOBILE ////// */
 
 /* ////// DESKTOP  ////// */  
@@ -92,129 +105,213 @@ p {
  
  /*media queries for a device of (min-width: 600px) and (max-width: 799px)--------*/
 @media screen and (min-width: 600px) and (max-width: 799px){ 
-#tablet { 
+.tablet { 
 	display: table;   
 } 
-#tabletToners { 
+#tabletToners {  
 	display: table;   
 } 
-#tablet h3 {
+.tablet h3 {
 	padding: 0;     
-	margin: 0; 
-	margin-left: 25px; 
+	margin: 0; 	 
+    margin-left: 25px;  
 	padding-bottom: 5px;
 	text-align: left;
 	font-size: 1em;  
 }	
 #tabletToners h3 {
 	padding: 0;     
-	margin: 0; 
-	margin-left: 25px; 
+	margin: 0; 	 
+    margin-left: 25px;  
 	padding-bottom: 5px;
 	text-align: left;
 	font-size: 1em;  
 }	
-#tablet td {
+.tablet td {
    width: 50%;
    align-content: center;
-}
+} 
 #tabletToners td {
    width: 50%;
    align-content: center;
-}  
-#mobile { 
+} 
+.mobile { 
 	display: none;  
-}	
-#desktopToners {  
+}	 
+#desktopToners {   
 	display: none;  
 }
-img { 	 	 
-	width: 350px;    
-	height: 300px;	    
+.tablet img{ 	 	  
+	width: 350px;     
+	height: 300px;
+    text-align: right;
 } 
- 
+#tabletToners img {
+    width: 350px;     
+	height: 300px;	
+     text-align: right; 
+} 
 p {
 	text-align: left;	    
-	font-size: 1.1em;
-	margin-left: 25px;  
+	font-size: 1.1em;     
 	margin-right: 25px;
 	margin-top: 5px; 
 	margin-bottom: 20px;
-}	
+}	  
  
-
 }    
-/*End media queries for a device of (min-width: 600px) and (max-width: 799px) --------*/
+/*End media queries for a device of (min-width: 600px) and (max-width: 799px) --------*/ 
 
-/*media queries for a device of (min-width:800px)--------*/
-@media screen and (min-width: 800px)   {
-section h1 {
-	font-size: 3em;
-}  
+/*media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
+@media screen and (min-width: 800px) and (max-width: 1208px){ 
 	 
-#desktop { 
+.desktop { 
 	display: table;  
-}  
+}   
+     
+#desktopToners {
+   display: table;      
+} 
+.tablet { 
+   display: none;    
+}
 .imgCarousel {   
 	height: 200px;     
 	background: url(../images/products/productsImg.jpg) center/100% no-repeat;  
     display: flex; 
     align-content: stretch;
 } 
-#desktop h3 {
+.desktop h3 {
 	padding: 0;  
 	margin: 0;
 	text-align: center;
-	font-size: 1.5em;     
+	font-size: 1em;     
 }	
 #desktopToners h3 {
 	padding: 0;   
 	margin: 0;
-	text-align: center;
-	font-size: 1.5em;     
+	text-align: center; 
+	font-size: 1em;     
 }	
-#desktop td {   
-   align-items: center;
+.desktop td {   
+    margin: 0; 
+    padding: 0;
+    align-items: baseline;
+    text-align: center;
+    width: 33%;
 } 
-#desktop tr {
-   /*width: 33%; */
-   align-content: center;
-}
-#desktopToners {
-   display: table;      
+#desktopToners td {   
+    margin: 0; 
+    padding: 0;
+    align-items: baseline;
+    text-align: center;
+    width: 50%;
 } 
-#desktopToners td {  
-   
-   align-content: center;    
+tr  { 
+    margin: 0;
+    padding: 0; 
+    vertical-align: top
 }
 #tableToners { 
    display: none;     
 }
-#mobile { 
+.mobile {  
 	display: none;  
+}  
+img { 
+	padding: 0;  	  
+	margin: 0 auto;    
+	width: 400px;   
+	height: 300px;	
+    display: block; 
+	  
 } 
-#desktop img { 	 
-    padding: 0;
-    margin: 0 auto; 
-   /* padding: 15px; */ 	  	 
-	display: block;
-    max-width: 100%; 
-	width: 450px;   
-	height: 350px;	
-    vertical-align: text-top; 
-} 
-#desktopToners img { 	  	 
-	width: 450px;    
-	height: 350px;
-    vertical-align: text-top; 
-} 
-p {
+p {      
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: middle; 
+	margin: 30px;   
+	font-size: 1em; 
+	  
+}	   
+  
+} 
+/*End media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
+
+ 
+/*media queries for a device of (min-width:1209px)--------*/
+  
+@media screen and (min-width: 1209px)   {  
+	 
+.desktop { 
+	display: table;  
+}   
+     
+#desktopToners {
+   display: table;      
+} 
+.tablet { 
+   display: none;    
+}
+.imgCarousel {   
+	height: 200px;     
+	background: url(../images/products/productsImg.jpg) center/100% no-repeat;  
+    display: flex; 
+    align-content: stretch;
+} 
+.desktop h3 {
+	padding: 0;  
+	margin: 0;
+	text-align: center;
+	font-size: 1.3em;     
+}	
+#desktopToners h3 {
+	padding: 0;   
+	margin: 0;
+	text-align: center; 
+	font-size: 1.3em;     
+}	
+.desktop td {   
+    margin: 0; 
+    padding: 0;
+    align-items: baseline;
+    text-align: center;
+    width: 33%;
+} 
+#desktopToners td {   
+    margin: 0; 
+    padding: 0;
+    align-items: baseline;
+    text-align: center;
+    width: 50%;
+} 
+tr  { 
+    margin: 0;
+    padding: 0; 
+    vertical-align: top
+}
+#tableToners { 
+   display: none;     
+}
+.mobile {  
+	display: none;  
+}  
+img { 
+	padding: 0;  	  
+	margin: 0 auto;    
+	width: 400px;   
+	height: 340px;	
+    display: block; 
+	 
+} 
+p {      
+	text-align: center;
+	vertical-align: middle; 
 	margin: 30px;   
 	font-size: 1.2em;
-	 
+	  
 }	   
+ 
+
 } 
 /*End media queries for a device of (min-width: 800px)--------*/
  
