@@ -26,8 +26,7 @@ font-family: 'Raleway', sans-serif;
 .imgCarousel {     
 	height: 200px; 
     background: url(../images/aboutUs/aboutUs.png) left no-repeat; 
-    display: flex; 
-    align-content: stretch; 
+    display: flex;   
      
 }  
 section { 	 
@@ -37,6 +36,7 @@ section {
     font-family: 'Raleway', sans-serif; 
 	display: flex;
 	flex-direction: column;  
+    line-height: 1.5;
 	padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px; 
