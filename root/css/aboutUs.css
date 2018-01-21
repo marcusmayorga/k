@@ -15,7 +15,7 @@ font-family: 'Raleway', sans-serif;
 /* //////MOBILE FIRST:////// */
 * {     
     padding: 0;  
-	box-sizing: border-box; 
+	box-sizing: border-box;	
 }   
 .carousel { 
   max-width: 100%;  
@@ -30,11 +30,11 @@ font-family: 'Raleway', sans-serif;
     align-content: stretch; 
      
 }  
-section { 	 
-	 
+section { 	  
 	height: 100%; 
-    margin: 0 auto;        
-    font-family: 'Raleway', sans-serif; 
+    margin: 0 auto;  
+	font-family: 'Raleway', sans-serif;
+    color: #000; 
 	display: flex;
 	flex-direction: column;  
 	padding-bottom: 20px;
@@ -52,7 +52,7 @@ section h1 {
 	padding: 0;  
 	margin: 0;
 	text-align: center;
-	font-size: .90em; 
+	font-size: 1em; 
 	}    
 img { 
 	padding: 0;  	  
@@ -63,7 +63,7 @@ img {
 } 
 .border img{
   max-width: 100%;   
-  margin-bottom: 5px; 
+  margin-bottom: 5px;  
   padding-left: 70px; 
   padding-right: 70px;
 } 
@@ -75,7 +75,7 @@ p {
 	margin-right: 25px;
 	margin-top: 5px; 
 	margin-bottom: 20px;
-	font-size: .95em;     
+	font-size: 1em;     
 } 
 .mobile p { 	  
     padding: 15px;
@@ -120,7 +120,7 @@ td#text {
 } 
 p {
 	text-align: center;	    
-	font-size: 1.1em;
+	font-size: 1em;
 	margin-left: 25px;   
 	margin-right: 25px;
 	margin-top: 5px; 
@@ -150,7 +150,7 @@ p {
     align-content: stretch;
 }  
 section h1 {
-	font-size: 3em;
+	font-size: 2em;
 }  
 	  
 #desktop { 
@@ -160,7 +160,7 @@ section h1 {
 	padding: 0;  
 	margin: 0;
 	text-align: center;
-	font-size: 1.5em;  
+	font-size: 1em;  
 }	   
 .mobile { 
 	display: none;  
@@ -177,7 +177,7 @@ td#text {
 }
 p { 
 	text-align: center;	    
-	font-size: 1.2em;
+	font-size: 1em;
 	margin-left: 25px;   
 	margin-right: 25px;
 	margin-top: 5px; 
@@ -190,7 +190,7 @@ p {
     border: 1px solid #a6b0c0; 
     border-radius: 8px;     
 }
-.border{   
+.border{    
     padding-left:  140px;  
     padding-right: 140px;
 } 
