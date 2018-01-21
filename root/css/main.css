@@ -9,7 +9,7 @@ font-family: 'Raleway', sans-serif;
 #a6b0c0 - GRAY
 */
 
-/* //////MOBILE FIRST:////// */
+/* //////MOBILE FIRST LAYOUT:////// */
 body {
   background-color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -43,6 +43,8 @@ header {
   text-align: right;
 }
 /* -----NAVIGATION----- */
+/* For Side Pop out menu */
+/* ///////////////////// */
 .side-nav {
   height: 100%;
   width: 0;
@@ -59,6 +61,7 @@ header {
 .side-nav a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 22px;
   color: #ccc;
   display: block;
@@ -95,10 +98,28 @@ vertical-align: center;
 .open-slide svg {
     margin: 0 6px 0 21px;
 }
-.navbar-nav {
+/* END Side Pop out menu */
+/* ///////////////////// */
+
+/* For Side menu Content and DropDown */
+/* ///////////////////// */
+.main-nav-ul li {
+  list-style-type: none;
+}
+.main-nav-ul ul{
   display: none;
 }
-/* -----END NAVIGATION----- */
+.main-nav-ul li.tap ul{
+  display: block;
+}
+/* ///////////////////// */
+/* END Side menu Content and DropDown */
+
+.navbar-nav {
+  display: none; /* Hides desktop navbar */
+}
+/* ----- END NAVIGATION ----- */
+
 .carousel {
   height: 200px;
   width: 100%;
@@ -187,7 +208,11 @@ footer .socialContainer {
 .footerCopy li a:hover {
   text-decoration: underline;
 }
+
+
 /* //////FOR DESKTOP:////// */
+/* /////////////////////// */
+
 @media only screen and (min-width: 925px) {
   .contactFixed {
    text-align: right;
@@ -229,7 +254,7 @@ footer .socialContainer {
     display: inline-block;
   }
   /*  NAV BAR */
-  header {
+header {
     height: 175px;
     position: fixed;
     z-index: 2;
@@ -257,8 +282,8 @@ footer .socialContainer {
 .navbar-nav {
  padding: 10px;
 }
-.nav-item {
-  display: inline-block;
+.navbar-nav a {
+  display: block;
   padding: 10px 10px;
   color: #fff;
   text-decoration: none;
@@ -269,33 +294,33 @@ footer .socialContainer {
   border-radius: 23px;
   margin: -3px -3px 0 -3px;
 }
-.nav-content {
+.navbar-nav ul {
   position: absolute;
-  top:168px;
+  top: 168px;
   overflow: hidden;
   background-color: #99826c;
-  max-height: 0;
-}
-.nav-content a {
-  color: #fff;
-  text-decoration: none;
-}
-.nav-content a:hover {
-  text-decoration: underline;
-}
-.nav-sub {
+  display: none;
   padding: 0;
 }
-.nav-sub ul{
+.navbar-nav ul a {
+  color: #fff;
+  text-decoration: none;
+  font-size: .75em;
+}
+.navbar-nav li:hover ul {
+  display: block;
+}
+.navbar-nav ul a:hover {
+  text-decoration: underline;
+}
+.navbar-nav ul li{
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-.nav-sub ul li a {
-  display: inline-block;
+.navbar-nav ul li a {
+  display: block;
   height: 19px;
-  padding: 15px;
-  width: 100%;
 
 }
 .nav-item:focus ~ .nav-content {
@@ -349,15 +374,16 @@ header {
   height: 135px;
   position: fixed;
   z-index: 2;
+  top: 0;
   }
   .navbar {
     width: 818px;
     float: right;
     margin: 67px 0 0 0;
   }
-  .nav-content {
+  .navbar-nav ul {
     position: absolute;
-    top:108px;
+    top: 108px;
   }
 .slider {
 margin-top: 135px;

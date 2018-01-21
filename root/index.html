@@ -9,25 +9,21 @@
 <script src="scripts/html5shiv.min.js"></script>
 <![endif]-->
 <!-- BEGIN CSS -->
-  <link rel="stylesheet" href="css/normalize.min.css" type="text/css">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-  <link rel="stylesheet" href="css/jquery.bxslider.css"> <!-- for BxSlider -->
+  <link rel="stylesheet" href="css/normalize.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/main.css" type="text/css"/>
+  <link rel="stylesheet" href="css/slick.css" type="text/css"/>
+  <link rel="stylesheet" href="css/slick-theme.css" type="text/css"/>
+  <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css"> <!-- for BxSlider -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> <!--Font Awesome -->
   <!-- END CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <script src="scripts/jquery.min.js"></script>
-  <!-- <script src="scripts/slick.min.js"></script> -->
+
+  <script src="scripts/jquery.min.js"></script> <!-- JQUERY -->
   <script src="js/jquery.bxslider.min.js"> </script><!-- for BxSlider -->
-  <script src="scripts/navScript.js"></script>
+  <script src="scripts/navScript.js"></script><!-- for mobile slide out menu -->
+  <script src="scripts/sideNavDrop.js"></script><!-- for mobile submenus -->
+  <script src="scripts/bxSliderMain.js"></script><!-- for main BX slider -->
   <!-- INDIVIDUAL PAGE CSS -->
- <script>
-    $(document).ready(function(){
-      $('.slider').bxSlider({
-          auto: true
-      });
-    });
-  </script>
+
 </head>
 <body>
 <div class="container">
@@ -38,14 +34,15 @@
     </ul>
   </div>
 <header class="nav-down">
-  <div class="headerContain">
+  <div class="headerContain"> <!-- Start headerContain -->
   <div class="logoContain">
     <h1>Kalli Alexa</h1>
     <h2>Skin Care</h2>
   </div>
 
-<!-- NAVIGATION -->
+<!-- START NAVIGATION -->
 
+<!-- hamburger menu -->
 <span class="open-slide">
     <a href="#" onclick="openSlideMenu()">
       <svg width="30" height="30">
@@ -58,25 +55,21 @@
       </svg>
     </a>
 </span>
+<!-- END hamburger menu -->
+
+<!-- START DESKTOP VERSION -->
  <nav class="navbar">
   <ul class="navbar-nav">
     <li><a href="#" class="nav-item">Home</a></li>
     <li><a href="#" class="nav-item">About</a>
-      <div class="nav-content">
-        <div class="nav-sub">
           <ul>
             <li><a href="pages/aboutUs.html">About Us</a></li>
-            <li><a href="pages/">Testimonial</a></li>
+            <li><a href="pages/aboutUs.html/#testimonials">Testimonials</a></li>
             <li><a href="pages/faq.html">FAQ</a></li>
           </ul>
-        </div>
-      </div>
     </li>
     <li><a href="#" class="nav-item">Services</a>
-      <div class="nav-content">
-        <div class="nav-sub">
           <ul>
-            <li><a href="pages/services.html">Our Services</a></li>
             <li><a href="pages/services_backTreatment.html">Back Treatment</a></li>
             <li><a href="pages/services_skincare.html">Skin Care</a></li>
             <li><a href="pages/services_eyelash.html">Eyelash Extensions</a></li>
@@ -84,9 +77,6 @@
             <li><a href="pages/services_mua.html">Makeup Artist</a></li>
             <li><a href="pages/services_mul.html">Makeup Lessions</a></li>
           </ul>
-        </div>
-      </div>
-
     </li>
     <li><a href="pages/products.html" class="nav-item">Products</a></li>
     <li><a href="pages/specials.html" class="nav-item">Specials</a></li>
@@ -94,20 +84,42 @@
     <li><a href="pages/appointments.html" class="nav-item">Appointments</a></li>
   </ul>
 </nav>
+<!-- END DESKTOP VERSION -->
 
+<!-- START MOBILE VERSION -->
 <div id="side-menu" class="side-nav">
   <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-  <a href="index.html">Home</a>
-  <a href="pages/aboutUs.html">About</a>
-  <a href="pages/services.html">Services</a>
-  <a href="pages/products.html">Products</a>
-  <a href="pages/specials.html">Specials</a>
-  <a href="pages/contactUs.html">Contact</a>
-  <a href="pages/appointments.html">Appointments</a>
+  <ul class="main-nav-ul">
+    <li><a href="#">Home</a></li>
+    <li class="has-sub"><a href="#">About</span></a>
+        <ul>
+          <li><a href="pages/aboutUs.html">About Us</a></li>
+          <li><a href="pages/aboutUs.html/#testimonials">Testimonials</a></li>
+          <li><a href="pages/faq.html">FAQ</a></li>
+        </ul>
+    </li>
+    <li class="has-sub"><a href="#">Services</span></a>
+        <ul>
+          <li><a href="pages/services.html">Our Services</a></li>
+          <li><a href="pages/services_backTreatment.html">Back Treatment</a></li>
+          <li><a href="pages/services_skincare.html">Skin Care</a></li>
+          <li><a href="pages/services_eyelash.html">Eyelash Extensions</a></li>
+          <li><a href="pages/services_waxing.html">Waxing</a></li>
+          <li><a href="pages/services_mua.html">Makeup Artist</a></li>
+          <li><a href="pages/services_mul.html">Makeup Lessions</a></li>
+        </ul>
+    </li>
+    <li><a href="pages/products.html">Products</a></li>
+    <li><a href="pages/specials.html">Specials</a></li>
+    <li><a href="pages/contactUs.html">Contact</a></li>
+    <li><a href="pages/appointments.html">Appointments</a></li>
+  </ul>
 </div>
-</div>
-</header>
+<!-- END MOBILE VERSION -->
 <!-- END NAVIGATION -->
+</div><!-- end headerContain -->
+</header>
+
 
   <!--  START INDIVIDUAL PAGE CONTENT -->
 <!--
@@ -143,6 +155,7 @@ We promise you an experience of a lifetime with our specialized facials. Beauty 
       </article>
   </section>
   <!-- END INDIVIDUAL PAGE CONTENT -->
+
   <footer>
     <div class="footerContain">
         <div class="infoContainer">
@@ -160,24 +173,17 @@ We promise you an experience of a lifetime with our specialized facials. Beauty 
         </div>
     </div>
   </footer>
+
    <div class="footerCopy">
       <ul>
         <li>Copyright &copy; 2017 Kalli Alexa Skincare</li>
-        <li><a href="pages/">Privacy Policy</a></li>
+        <li><a href="pages/privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
-  </div>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slickSlider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
-    });
-  </script>
+  </div><!-- End ALL footers -->
+
+  <script src="scripts/slickSliderMain.js"></script>
   <script src="scripts/hideHeader.js"></script>
-<script type="text/javascript" src="scripts/slick.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
 </body>
 </html>
