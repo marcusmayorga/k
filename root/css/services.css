@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400,700');
+/*
+File:  services.css file
+Author: Melinda Hasselbring
+date : 01/20/18
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
 /*
 //////FONTS//////
 font-family: 'Quicksand', sans-serif;
@@ -20,19 +27,29 @@ main, section, aside, article, header, footer, nav, video, audio, figure {
 
 
 /*************** MEL'S CODE *****************/
-imageContainer{
-    background: url(../images/services/zen-wallpaper-hd-1b.jpg) no-repeat top left fixed;
-    height: 100%;
-    background-color: rgba(255, 255, 255, .7);
+* {     
+    padding: 0;  
+	box-sizing: border-box; 
+} 
+.carousel {
+  height: 200px; 
+    
+/*    background: linear-gradient(to right, #2c401f, #26520d);*/
+    background: linear-gradient(#26520d, #407314, #7ba129);
+    
 }
-#service_img {
-    max-width:120%;
-}
-
-
-section { 
+.imgCarousel { 
+	height: 200px;    
+	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat; 
+} 
+section { 	
+	width: 100%; 
+	height: 100%; 
+    margin: 0 auto;        
+    font-family: 'Raleway', sans-serif; 
 	display: flex;
-    flex-direction: column; 
+	flex-direction: column;  
+	padding-bottom: 20px;
 }
 .service-sec {
     display: flex;
