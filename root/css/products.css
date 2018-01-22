@@ -40,7 +40,7 @@ section {
 }   
 section h1 {
 	text-align: center;
-    font-family: 'Quicksand', sans-serif; 
+    font-size: 2em;
 }  
 .tablet {  
 	display: none; 
@@ -55,6 +55,7 @@ section h1 {
     display: none; 
 }
 article  h2 { 
+	font-size: 1.5em;
 	line-height: 2; 
 	text-align: center;	 
 	color: #fff;  
@@ -69,7 +70,7 @@ article  h2 {
 	padding: 0;  
 	margin: 0;
 	text-align: center;
-	font-size: .90em; 
+	font-size: 1em; 
 	}    
 
 img { 
@@ -95,7 +96,7 @@ p {
 	margin-right: 25px;
 	margin-top: 5px; 
 	margin-bottom: 20px;
-	font-size: .95em; 
+	font-size: 1em;
 } 
 
 /* //////ENDS MOBILE ////// */
@@ -153,7 +154,7 @@ p {
 } 
 p {
 	text-align: left;	    
-	font-size: 1.1em;     
+	font-size: 1em;   
 	margin-right: 25px;
 	margin-top: 5px; 
 	margin-bottom: 20px;
@@ -268,7 +269,7 @@ p {
 	padding: 0;   
 	margin: 0;
 	text-align: center; 
-	font-size: 1.3em;     
+	font-size: 1em;  
 }	
 .desktop td {   
     margin: 0; 
@@ -309,7 +310,7 @@ p {
 	margin: 30px;   
 	font-size: 1.2em;
 	  
-}	   
+}	     
  
 
 } 

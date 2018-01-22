@@ -33,6 +33,8 @@ font-family: 'Raleway', sans-serif;
 section {  
 	display: flex;
     flex-direction: column; 
+	font-family: 'Raleway', sans-serif;
+    color: #000;  
 }
 section h1 {
 	text-align: center;
@@ -49,7 +51,6 @@ section li {
   width: 100%; 
   margin: 0 auto;
   height: 100%;    
-  font-family: 'Raleway', sans-serif; 
 } 
 .articleContact {	  	  
 	padding-left: 5px; 
@@ -58,10 +59,9 @@ section li {
 .dataContact {
 	margin: 0 auto; 	   
 } 
-h2 {text-align: center;}   
+h2 {text-align: center;font-size: 1.5em;}   
 h3 {
-	font-size: 1em;
-	font-family: 'Quicksand', sans-serif;  
+	font-size: 1em;	 
 	color: #82705e; 
 }
 .dataContact li {	   
@@ -172,7 +172,7 @@ select#reference {
 	margin-left: 15px; 
 	margin-bottom: .5em; 
 	font-size: 1em;
-	color: #42413c;     
+	color: #42413c;       
 }   
 textarea  {        
     color: #6b6e6e;      
@@ -221,7 +221,7 @@ input.button{
 		font-size: .85em;
 	}
 	.textareaContact h3 {
-		font-size: .95em;
+		font-size: 1em;
 	}
 	.textareaContact {
 		font-size: .95em;	     
@@ -377,8 +377,8 @@ input.button{
 		font-size: .85em;
 	}
 	.textareaContact h3 {
-		font-size: .95em;
-	}
+		font-size: 1em;
+	} 
 	.textareaContact {
 		font-size: .95em;	
 		width: 100%;   
@@ -452,7 +452,7 @@ input.button{
 		font-size: .85em;
 	}
 	.textareaContact h3 {
-		font-size: .95em;
+		font-size: 1em;
 	}
 	.textareaContact {
 		font-size: .95em;	
@@ -524,7 +524,7 @@ input.button{
 		font-size: .85em;
 	}
 	.textareaContact h3 {
-		font-size: .95em;
+		font-size: 1em;
 	}
 	.textareaContact {
 		font-size: .95em;	
@@ -592,7 +592,7 @@ input.button{
 		font-size: .85em;
 	}
 	.textareaContact h3 {
-		font-size: .95em;
+		font-size: 1em;
 	}
 	.textareaContact {
 		font-size: .95em;	
@@ -727,4 +727,4 @@ input.button{
 	}      
 	
 	
-}
+} 
