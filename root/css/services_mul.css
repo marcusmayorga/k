@@ -26,7 +26,7 @@ font-family: 'Raleway', sans-serif;
 }
 .imgCarousel { 
 	height: 200px;    
-	background: url(../images/contact/contacImg.png) center no-repeat; 	
+	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat; 
 	display: flex;    
     align-content: stretch;     
 }  
@@ -133,7 +133,7 @@ p{
 .duration {
 		text-align: center; 
 }
-.desc {   
+.desc {    
 	color: #a6b0c0; 
 	margin: 0; 
 	margin-left: 20px;       
