@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
- 
-/* 
- 
+
+/*
+
 File:  faq.css
-Author: Monica Rodriguez 
+Author: Monica Rodriguez
 date : 01/14/18
- 
- 
+
+
 //////FONTS//////
 font-family: 'Quicksand', sans-serif;
-font-family: 'Raleway', sans-serif;  
-//////COLORS////// 
+font-family: 'Raleway', sans-serif;
+//////COLORS//////
 #346469
 #5ca2aa
 #a6b0c0 - GRAY
@@ -18,130 +18,128 @@ font-family: 'Raleway', sans-serif;
 
 
 /* //////MOBILE FIRST:////// */
-* {     
-    padding: 0;  	 
-}     
-.carousel { 
-  max-width: 100%;  
-  height: 200px; 
-  background: radial-gradient(closest-corner at 60% 55%, #ccddff, #e6eeff);    
-    
-}    
-.imgCarousel {    
-	height: 200px;       
-    max-width: 100%;   
-    width: 220%;  
-    background: url(../images/faq/faqImg1.jpg) center no-repeat;  
-     
-}  
-.sectionContact {       
-  width: 100%; 
+
+.carousel {
+  max-width: 100%;
+  height: 200px;
+  background: radial-gradient(closest-corner at 60% 55%, #ccddff, #e6eeff);
+
+}
+.imgCarousel {
+	height: 200px;
+    max-width: 100%;
+    width: 220%;
+    background: url(../images/faq/faqImg1.jpg) center no-repeat;
+
+}
+.sectionContact {
+  width: 100%;
   margin: 0 auto;
-  height: 100%;    
-  font-family: 'Raleway', sans-serif; 
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
   color:000;
   display: flex;
-	
-} 
-.imgSide { 	    
-	height: 140px;  
-	background: url(../images/faq/faqImg2.png) center no-repeat;	 
-}  
-article {	 	  
-	padding-left: 15px; 
-	padding-right: 15px;    
+
+}
+.imgSide {
+	height: 140px;
+	background: url(../images/faq/faqImg2.png) center no-repeat;
+}
+article {
+	padding-left: 15px;
+	padding-right: 15px;
 	padding-bottom: 10px;
-}    
- .textContent { 
-	padding-top: 20px;	  
+}
+ .textContent {
+	padding-top: 20px;
 }
 #accordion {
-	 margin: 0 auto ; 
-     border: 1px solid #82705e;  
+	 margin: 0 auto ;
+     border: 1px solid #82705e;
 }
  #accordion.ui-accordion .ui-accordion-content {
-	padding: .85em 1.5em; 
-	height: 150px;  	 
-}     
-#accordion h3 { 	
-	font-size: 1em;    
-	border: 1px solid #82705e;     
-    background: radial-gradient(closest-corner at 60% 55%, #99826c, #82705e); 	 
+	padding: .85em 1.5em;
+	height: 150px;
+}
+#accordion h3 {
+	font-size: 1em;
+	border: 1px solid #82705e;
+    background: radial-gradient(closest-corner at 60% 55%, #99826c, #82705e);
     font-weight: normal;
-    color: #fff; 
+    color: #fff;
 	text-align: left;
 }
 #accordion p {
-	width: 100%;	 
-}	
-.textContent h1 {     
-	text-align: center; 	
-} 
+	width: 100%;
+}
+.textContent h1 {
+	text-align: center;
+}
 article ul{
 	padding-left: 15px;
-} 
-article li { 
-	 color: #262626;   
 }
-  
+article li {
+	 color: #262626;
+}
+
 /* //////ENDS MOBILE ////// */
 
 /* ////// MOBILE SMALL DEVICES ////// */
-@media screen and  (max-width: 394px) { 
-#accordion h3 { 	 
-	font-size: .95em; 	 
+@media screen and  (max-width: 394px) {
+#accordion h3 {
+	font-size: .95em;
 }
 #accordion p {
 	font-size: .95em;
-}	 
-}   
+}
+}
 
  /*End media queries for a device of (min-width: 600px) and (max-width: 730px)--------*/
-@media screen and (min-width: 650px) and (max-width: 729px) {   
-article {	 	  
-	padding-left: 20px; 
-	padding-right: 20px;  	 
-}   		 
-} 
+@media screen and (min-width: 650px) and (max-width: 729px) {
+article {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+}
 /*End media queries for a device of (min-width: 650px) and (max-width: 729px)--------*/
 
 /*Start media queries for a device of (min-width: 730px) and (max-width: 829px)--------*/
-@media screen and (min-width: 730px) and (max-width: 829px) {    
- article {	 	  
-	padding-left: 35px;   
-	padding-right: 35px;  	 
-}     
-} 
+@media screen and (min-width: 730px) and (max-width: 829px) {
+ article {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+}
 /*End media queries for a device of (min-width: 730px) and (max-width: 829px)--------*/
 
 /*Start media queries for a device of (min-width: 830px) and (max-width: 855px)--------*/
-@media screen and (min-width: 830px) and (max-width: 855px) { 
-article {	 	  
-	padding-left: 45px;    
-	padding-right: 45px;  	 
-}    
+@media screen and (min-width: 830px) and (max-width: 855px) {
+article {
+	padding-left: 45px;
+	padding-right: 45px;
+}
 }
 /*End media queries for a device of (min-width: 830px) and (max-width: 855px)--------*/
 
  /*Start media queries for a device of (min-width: 856px) and (max-width: 1100px)--------*/
-@media screen and (min-width: 856px) and (max-width: 1100px) {    
-   article {	 	  
-	padding-left: 35px;    
-	padding-right: 35px;   	 
-}     
-} 
-/*End media queries for a device of (min-width: 856px) and (max-width: 1100px)--------*/ 
- 
+@media screen and (min-width: 856px) and (max-width: 1100px) {
+   article {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+}
+/*End media queries for a device of (min-width: 856px) and (max-width: 1100px)--------*/
+
 /*Start media queries for a device min-width: 1101px--------*/
-@media screen and (min-width: 1101px) { 	
-article {	 	   
-	padding-left: 35px;    
-	padding-right: 35px; 
-	padding-bottom: 40px; 
-}     
-.imgSide { 	   
-	height: 200px;  
-	background: url(../images/faq/faqImg2.png) center no-repeat;	 
-}   	
-	
+@media screen and (min-width: 1101px) {
+article {
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 40px;
+}
+.imgSide {
+	height: 200px;
+	background: url(../images/faq/faqImg2.png) center no-repeat;
+}
+
 }

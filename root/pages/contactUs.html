@@ -1,15 +1,10 @@
-<!-- 
-File:  ContactUs.html
-Author: Monica Rodriguez 
-date : 01/13/18
- -->
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Contact Us</title>
+  <title>Kalli Alexa Skincare - Contact Us</title>
   <!-- [if It IE9]>
 <script src="scripts/html5shiv.min.js"></script>
 <![endif]-->
@@ -21,241 +16,240 @@ date : 01/13/18
   <link rel="stylesheet" href="../css/jquery.bxslider.css" type="text/css"> <!-- for BxSlider -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> <!--Font Awesome -->
   <!-- END CSS -->
- 
+
   <script src="../scripts/jquery.min.js"></script> <!-- JQUERY -->
   <script src="../js/jquery.bxslider.min.js"> </script><!-- for BxSlider -->
   <script src="../scripts/navScript.js"></script><!-- for mobile slide out menu -->
   <script src="../scripts/sideNavDrop.js"></script><!-- for mobile submenus -->
   <script src="../scripts/bxSliderMain.js"></script><!-- for main BX slider -->
   <!-- INDIVIDUAL PAGE CSS -->
- <link rel="stylesheet" href="../css/contactUs.css" type="text/css">	
+  <link rel="stylesheet" href="../css/contactUs.css" type="text/css">
 
-</head> 
+</head>
 <body>
+<div class="container">
+  <div class="contactFixed nav-down">
+    <ul>
+      <li>(760) 356-0325</li>
+      <li>KalliAlexaSkincare@gmail.com</li>
+    </ul>
+  </div>
+<header class="nav-down">
+  <div class="headerContain"> <!-- Start headerContain -->
+  <div class="logoContain">
+    <h1>Kalli Alexa</h1>
+    <h2>Skin Care</h2>
+  </div>
 
-  <div class="container">
-  	<div class="contactFixed nav-down">
-    	<ul>
-     	 <li>(760) 356-0325</li>
-      	 <li>KalliAlexaSkincare@gmail.com</li>
-    	</ul>
-  	</div>
-	
-	<header class="nav-down">
- 	  <div class="headerContain"> 	<!-- Start headerContain -->    
-  		 <div class="logoContain">
-    		<h1>Kalli Alexa</h1>
-    		<h2>Skin Care</h2>
-  		 </div>
+<!-- START NAVIGATION -->
 
-		<!-- START NAVIGATION -->
+<!-- hamburger menu -->
+<span class="open-slide">
+    <a href="#" onclick="openSlideMenu()">
+      <svg width="30" height="30">
+        <path d="M0,5 30,5" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,14 30,14" stroke="#fff"
+          stroke-width="5"/>
+        <path d="M0,23 30,23" stroke="#fff"
+          stroke-width="5"/>
+      </svg>
+    </a>
+</span>
+<!-- END hamburger menu -->
 
-		<!-- Side menu -->
-		<span class="open-slide">
-    		<a href="#" onclick="openSlideMenu()">
-     		 <svg width="30" height="30">
-      		 	<path d="M0,5 30,5" stroke="#fff"
-          	 	stroke-width="5"/>
-        	 	<path d="M0,14 30,14" stroke="#fff"
-             	stroke-width="5"/>
-        	 	<path d="M0,23 30,23" stroke="#fff"
-          	 	stroke-width="5"/>
-      		 </svg>
-    		</a>
-		</span>
-		<!-- END Side menu -->
- 
-		<!-- START DESKTOP VERSION -->
- 		<nav class="navbar">  
-  			<ul class="navbar-nav">
-   			 	<li><a href="/index.html" class="nav-item">Home</a></li>
-    		 	<li><a href="#" class="nav-item">About Us</a>
-          			<ul>
-            			<li><a href="aboutUs.html">About Us</a></li>            		
-            			<li><a href="faq.html">FAQ</a></li>
-          			</ul> 
-    		 	</li>
-    		 	<li><a href="#" class="nav-item">Services</a>
-          			<ul>
-            			<li><a href="services_backTreatment.html">
-            			Back Treatment</a></li>
-            			<li><a href="services_skincare.html">Skin Care</a></li>
-            			<li><a href="services_eyelash.html">
-            			Eyelash Extensions</a></li>
-            			<li><a href="services_waxing.html">Waxing</a></li>
-            			<li><a href="services_mua.html">Makeup Artist</a></li>
-           				<li><a href="services_mul.html">Makeup Lessions</a></li>
-          			</ul>
-    		 	</li> 
-    		 	<li><a href="products.html" class="nav-item">Products</a></li>
-     		 	<li><a href="specials.html" class="nav-item">Specials</a></li>
-    		 	<li><a href="contactUs.html" class="nav-item">Contact</a></li>
-    		 	<li><a href="appointments.html" class="nav-item">Appointments</a></li>
-  			</ul>
-		</nav>
-		<!-- END DESKTOP VERSION -->
+<!-- START DESKTOP VERSION -->
+ <nav class="navbar">
+  <ul class="navbar-nav">
+    <li><a href="../index.html" class="nav-item">Home</a></li>
+    <li><a href="#" class="nav-item">About</a>
+          <ul>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="aboutUs.html#testimonials">Testimonials</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+    </li>
+    <li><a href="#" class="nav-item">Services</a>
+          <ul>
+            <li><a href="services_backTreatment.html">Back Treatment</a></li>
+            <li><a href="services_skincare.html">Skin Care</a></li>
+            <li><a href="services_eyelash.html">Eyelash Extensions</a></li>
+            <li><a href="services_waxing.html">Waxing</a></li>
+            <li><a href="services_mua.html">Makeup Artist</a></li>
+            <li><a href="services_mul.html">Makeup Lessions</a></li>
+          </ul>
+    </li>
+    <li><a href="products.html" class="nav-item">Products</a></li>
+    <li><a href="specials.html" class="nav-item">Specials</a></li>
+    <li><a href="contactUs.html" class="nav-item">Contact</a></li>
+    <li><a href="appointments.html" class="nav-item">Appointments</a></li>
+  </ul>
+</nav>
+<!-- END DESKTOP VERSION -->
 
-		<!-- START MOBILE VERSION -->
-		<div id="side-menu" class="side-nav">
-  			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-  				<ul class="main-nav-ul">
-    				<li><a href="/index.html">Home</a></li>
-    				<li class="has-sub"><a href="#">About</a>
-       				 	<ul> 
-          					<li><a href="aboutUs.html">About Us</a></li>
-          					<li><a href="faq.html">FAQ</a></li>
-        				</ul>
-    				</li>
-    				<li class="has-sub"><a href="#">Services</a>
-       					<ul> 
-          					<li><a href="#">Our Services</a></li>
-          					<li><a href="services_backTreatment.html">Back Treatment</a></li>
-          					<li><a href="services_skincare.html">Skin Care</a></li>
-          					<li><a href="services_eyelash.html">Eyelash Extensions</a></li>
-          					<li><a href="services_waxing.html">Waxing</a></li>
-          					<li><a href="services_mua.html">Makeup Artist</a></li>
-          					<li><a href="services_mul.html">Makeup Lessions</a></li>
-       					</ul>
-    				</li> 
-    				<li><a href="products.html">Products</a></li>
-    				<li><a href="specials.html">Specials</a></li>
-    				<li><a href="contactUs.html">Contact</a></li>
-    				<li><a href="appointments.html">Appointments</a></li>
-  				</ul> 
-		</div> <!-- END MOBILE VERSION -->
-		<!-- END NAVIGATION -->
-	  </div><!-- end headerContain -->
-    </header> 
- 
+<!-- START MOBILE VERSION -->
+<div id="side-menu" class="side-nav">
+  <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+  <ul class="main-nav-ul">
+    <li><a href="../index.html">Home</a></li>
+    <li class="has-sub"><a href="#">About</span></a>
+        <ul>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="aboutUs.html#testimonials">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </li>
+    <li class="has-sub"><a href="#">Services</span></a>
+        <ul>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="services_backTreatment.html">Back Treatment</a></li>
+          <li><a href="services_skincare.html">Skin Care</a></li>
+          <li><a href="services_eyelash.html">Eyelash Extensions</a></li>
+          <li><a href="services_waxing.html">Waxing</a></li>
+          <li><a href="services_mua.html">Makeup Artist</a></li>
+          <li><a href="services_mul.html">Makeup Lessions</a></li>
+        </ul>
+    </li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="specials.html">Specials</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="appointments.html">Appointments</a></li>
+  </ul>
+</div>
+<!-- END MOBILE VERSION -->
+<!-- END NAVIGATION -->
+</div><!-- end headerContain -->
+</header>
+
   <!--  START INDIVIDUAL PAGE CONTENT -->
  <div class="carousel">
-		<div class="imgCarousel"> 
-		</div> 
-	</div> 
-  
-  	<section class="sectionContact"> 
- 	    	  
-  	   <article class="articleContact">  
- 	      <div class="dataContact">  
- 	       	  	  
-  	      	<ul>   
-				<li>	<h2>Kalli Alexa Location</h2> </li>    
-     	  	 <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> 
-     	 	     Sola Salon 5726 La Jolla Blvd.<br>La Jolla, California 92037</li> 
+		<div class="imgCarousel">
+		</div>
+	</div>
+
+  	<section class="sectionContact">
+
+  	   <article class="articleContact">
+ 	      <div class="dataContact">
+
+  	      	<ul>
+				<li>	<h2>Kalli Alexa Location</h2> </li>
+     	  	 <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+     	 	     Sola Salon 5726 La Jolla Blvd.<br>La Jolla, California 92037</li>
        	 	  <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-       	  	     kallialexaskincare@gmail.com</li> 
-       	   	  <li><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 
-       	  	     (760) 356-0325</li>          
-    	 	</ul> 
+       	  	     kallialexaskincare@gmail.com</li>
+       	   	  <li><i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+       	  	     (760) 356-0325</li>
+    	 	</ul>
     	  </div> <!-- End of div dataContact -->
-    	  <!-- Map location --> 
-    	   
-		  <div class="mapContact">   
-  		  <div id="map"></div>  
-  		  </div>    
+    	  <!-- Map location -->
+
+		  <div class="mapContact">
+  		  <div id="map"></div>
+  		  </div>
     		 <script>
-      			function initMap() {    
+      			function initMap() {
 					var latlng = {lat: 32.816434, lng: -117.271263};
 					var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 15,         
+					zoom: 15,
           			center: latlng
-        		});  
+        		});
 				var marker = new google.maps.Marker({
-            	position: latlng, 
+            	position: latlng,
 				map: map
 				});
 				}
-    		 </script>  
+    		 </script>
    	   		 <script async defer
    			 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoXCDnycwrsc7_DKmDauw5kJbYPQdp2h4&callback=initMap">
-		   </script>	     
+		   </script>
 	   </article> <!-- End of articleContact -->
-	   
-	   <article class="asideContact"> 	   
-	   <form action="mailto:name@domain.com" method="post" id="mainContentForm" enctype="text/plain"> 
-             <div>               
-            	 <fieldset>            
+
+	   <article class="asideContact">
+	   <form action="mailto:name@domain.com" method="post" id="mainContentForm" enctype="text/plain">
+             <div>
+            	 <fieldset>
              		 <legend>Your Information</legend>
-               			 <ul>                     
-                 		   <li>                      
-                     		  <label for="fName">First Name</label>  
-                     		  <input type="text" id="fName" name="first_name" placeholder="Your first name" required autofocus="">                          
-                  		  </li>      
+               			 <ul>
+                 		   <li>
+                     		  <label for="fName">First Name</label>
+                     		  <input type="text" id="fName" name="first_name" placeholder="Your first name" required autofocus="">
+                  		  </li>
                    		  <li>
                      		  <label for="lName"> Last Name</label>
-                      		  <input type="text" id="lName" name="last_name" placeholder="Your last name" required>   
-                   		  </li> 
-                  		  <li> 
-                   		    <label for="email"> Email:</label>    
-                     		<input type="email" id="email" name="email" placeholder="yourName@domain.com" required> 
+                      		  <input type="text" id="lName" name="last_name" placeholder="Your last name" required>
+                   		  </li>
+                  		  <li>
+                   		    <label for="email"> Email:</label>
+                     		<input type="email" id="email" name="email" placeholder="yourName@domain.com" required>
                    		  </li>
                    		  <li>
                    		    <label for="phone">Phone:</label>
                     		<input type="tel" id="phone" name="phone" placeholder="888-123-4567">
-                   		  </li>  
-                    	  <li>   
-                      		 <p class="req">denotes required field.&nbsp;</p>  
-                   		  </li>                        
-                 		</ul>  
-                 </fieldset>           
-               </div> 
-                       
-               <div class="formSectionInterests" >   
-                  <fieldset>            
-            	 	 <legend>How did you hear about us ?</legend> 
+                   		  </li>
+                    	  <li>
+                      		 <p class="req">denotes required field.&nbsp;</p>
+                   		  </li>
+                 		</ul>
+                 </fieldset>
+               </div>
+
+               <div class="formSectionInterests" >
+                  <fieldset>
+            	 	 <legend>How did you hear about us ?</legend>
                 		 <select name="reference" id="reference">
-                      	   <!-- option-->                           
+                      	   <!-- option-->
                            <option value="anotherClient">Another client</option>
-                           <option value="internet">Internet</option>                          
+                           <option value="internet">Internet</option>
                            <option value="localAd">Local Ad</option>
                            <option value="newspaper">Newspaper</option>
-                           <option value="radio">Radio</option>  
-                           <option value="none">None all this</option>                            
-						 </select>   
-				  </fieldset> 
-           	    </div>                 		                 
-             		
-                <div class="formSectionInterests" id="formSectionSrv"> 
-                  <fieldset>            
-            	   	 <legend>Select the services you're interested in :</legend>                   
-                     <ul class="radioListContact"> 
+                           <option value="radio">Radio</option>
+                           <option value="none">None all this</option>
+						 </select>
+				  </fieldset>
+           	    </div>
+
+                <div class="formSectionInterests" id="formSectionSrv">
+                  <fieldset>
+            	   	 <legend>Select the services you're interested in :</legend>
+                     <ul class="radioListContact">
                          <li><input type="checkbox" name="service" id="skc" value="skc"><label for="skc">Skin care</label></li>
-                         <li><input type="checkbox" name="service" id="btr" value="btr"><label for="btr">Body treatment</label></li> 
+                         <li><input type="checkbox" name="service" id="btr" value="btr"><label for="btr">Body treatment</label></li>
                          <li><input type="checkbox" name="service" id="wxg" value="wxg"><label for="wxg">Waxing</label></li>
-                         <li><input type="checkbox" name="service" id="eys" value="eys"><label for="eys">Eye lashes</label></li>   
-                         <li><input type="checkbox" name="service" id="mkp" value="mkp"><label for="mkp">Makeup Artist</label></li>   
-                     </ul> 
-				  </fieldset>                                            
-                 </div>           
-                               
-                 <div class="formSectionInterests" id="formSectionSpc">  
-                   <fieldset>            
-            	     <legend>Sign-up for our specials !</legend>                      
-                     <ul class="radioListContact"> 
-                         <li><input type="radio" id="emailListYes" name="emailList" value="yes" checked><label for="emailListYes">Yes</label></li> 
+                         <li><input type="checkbox" name="service" id="eys" value="eys"><label for="eys">Eye lashes</label></li>
+                         <li><input type="checkbox" name="service" id="mkp" value="mkp"><label for="mkp">Makeup Artist</label></li>
+                     </ul>
+				  </fieldset>
+                 </div>
+
+                 <div class="formSectionInterests" id="formSectionSpc">
+                   <fieldset>
+            	     <legend>Sign-up for our specials !</legend>
+                     <ul class="radioListContact">
+                         <li><input type="radio" id="emailListYes" name="emailList" value="yes" checked><label for="emailListYes">Yes</label></li>
                          <li><input type="radio" id="emailListNo" name="emailList" value="no">
                          <label for="emailListNo">Not at this time</label></li>
-                     </ul> 
-                    </fieldset>  
-                 </div>    
-                      
-                 <div class="textareaContact"> 
-                    	 <h3>Inquiry/Comments/Questions</h3>                      
-                     	 <textarea name="msg" id="msg" placeholder="Please write your message here..."></textarea> 
-                 </div>     
-                     
-                 <div class="buttonContact">  
-                    	 <input type="reset" id="reset" class="button" value="RESET">   
+                     </ul>
+                    </fieldset>
+                 </div>
+
+                 <div class="textareaContact">
+                    	 <h3>Inquiry/Comments/Questions</h3>
+                     	 <textarea name="msg" id="msg" placeholder="Please write your message here..."></textarea>
+                 </div>
+
+                 <div class="buttonContact">
+                    	 <input type="reset" id="reset" class="button" value="RESET">
                      	 <input type="submit" id="submit" class="button" value="SUBMIT IT">
-                 </div>     
-                  
-  	  </form>  <!-- End of form -->   
-  </article> <!-- End of article asideContact -->   	
-   
+                 </div>
+
+  	  </form>  <!-- End of form -->
+  </article> <!-- End of article asideContact -->
+
   </section>
   <!-- END INDIVIDUAL PAGE CONTENT -->
- 
-    <footer>
+
+  <footer>
       <div class="footerContain">
           <div class="infoContainer">
            <h2>Kalli Alexa Location</h2>
@@ -273,11 +267,11 @@ date : 01/13/18
       </div>
     </footer>
 
-     <div class="footerCopy"> 
+     <div class="footerCopy">
         <ul>
           <li>Copyright &copy; 2017 Kalli Alexa Skincare</li>
           <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul> 
+        </ul>
       </div>
     </div><!-- End ALL footers -->
 
@@ -285,4 +279,4 @@ date : 01/13/18
     <script src="../scripts/hideHeader.js"></script>
     <script src="../scripts/slick.min.js"></script>
   </body>
-  </html> 
+  </html>

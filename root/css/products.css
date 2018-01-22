@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
-/* 
+/*
 File:  products.html
-Author: Monica Rodriguez 
+Author: Monica Rodriguez
 date : 01/18/18
 
 //////FONTS//////
@@ -15,304 +15,299 @@ font-family: 'Raleway', sans-serif;
 
 
 /* //////MOBILE FIRST:////// */
-* {     
-    padding: 0;  
-	box-sizing: border-box; 
-}   
-.carousel { 
-  height: 200px; 
-  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
+.carousel {
+  height: 200px;
+  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
 }
-.imgCarousel { 
-	height: 200px;    
-	background: url(../images/products/productsImg.jpg) center no-repeat;  
-    display: flex; 
+.imgCarousel {
+	height: 200px;
+	background: url(../images/products/productsImg.jpg) center no-repeat;
+    display: flex;
     align-content: stretch;
-} 
-section { 	
-	width: 100%; 
-	height: 100%; 
-    margin: 0 auto;        
-    font-family: 'Raleway', sans-serif; 
+}
+section {
+	width: 100%;
+	height: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 	display: flex;
-	flex-direction: column;  
+	flex-direction: column;
 	padding-bottom: 20px;
-}   
+}
 section h1 {
 	text-align: center;
     font-size: 2em;
-}  
-.tablet {  
-	display: none; 
-}   
-.desktop {  
-	display: none; 
-}  
+}
+.tablet {
+	display: none;
+}
+.desktop {
+	display: none;
+}
 #tabletToners {
-    display: none;  
+    display: none;
 }
 #desktopToners {
-    display: none; 
+    display: none;
 }
-article  h2 { 
+article  h2 {
 	font-size: 1.5em;
-	line-height: 2; 
-	text-align: center;	 
-	color: #fff;  
+	line-height: 2;
+	text-align: center;
+	color: #fff;
 	font-family: 'Quicksand', sans-serif;
-    background: radial-gradient(closest-corner at 60% 55%, #a18c78, #82705e);  
+    background: radial-gradient(closest-corner at 60% 55%, #a18c78, #82705e);
     -webkit-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
     -moz-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
-    box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);  
-}    
-    
+    box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
+}
+
 .mobile h3 {
-	padding: 0;  
+	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-size: 1em; 
-	}    
+	font-size: 1em;
+	}
 
-img { 
-	padding: 0;  	  
-	margin: 0 auto;   
-	padding: 15px;	 
-	width: 400px;   
-	height: 400px;	 	  
+img {
+	padding: 0;
+	margin: 0 auto;
+	padding: 15px;
+	width: 400px;
+	height: 400px;
 	display: block;
     max-width: 100%;
-} 
+}
 
 .border img{
-   max-width: 100%;   
-   margin-bottom: 5px;    
-   padding-left: 70px; 
-   padding-right: 70px; 
-}   
-p {  
+   max-width: 100%;
+   margin-bottom: 5px;
+   padding-left: 70px;
+   padding-right: 70px;
+}
+p {
 	text-align: center;
-	vertical-align: middle;	 
-	margin-left: 25px; 
+	vertical-align: middle;
+	margin-left: 25px;
 	margin-right: 25px;
-	margin-top: 5px; 
+	margin-top: 5px;
 	margin-bottom: 20px;
 	font-size: 1em;
-} 
+}
 
 /* //////ENDS MOBILE ////// */
 
-/* ////// DESKTOP  ////// */  
- 
- 
+/* ////// DESKTOP  ////// */
+
+
  /*media queries for a device of (min-width: 600px) and (max-width: 799px)--------*/
-@media screen and (min-width: 600px) and (max-width: 799px){ 
-.tablet { 
-	display: table;   
-} 
-#tabletToners {  
-	display: table;   
-} 
+@media screen and (min-width: 600px) and (max-width: 799px){
+.tablet {
+	display: table;
+}
+#tabletToners {
+	display: table;
+}
 .tablet h3 {
-	padding: 0;     
-	margin: 0; 	 
-    margin-left: 25px;  
+	padding: 0;
+	margin: 0;
+    margin-left: 25px;
 	padding-bottom: 5px;
 	text-align: left;
-	font-size: 1em;  
-}	
+	font-size: 1em;
+}
 #tabletToners h3 {
-	padding: 0;     
-	margin: 0; 	 
-    margin-left: 25px;  
+	padding: 0;
+	margin: 0;
+    margin-left: 25px;
 	padding-bottom: 5px;
 	text-align: left;
-	font-size: 1em;  
-}	
+	font-size: 1em;
+}
 .tablet td {
    width: 50%;
    align-content: center;
-} 
+}
 #tabletToners td {
    width: 50%;
    align-content: center;
-} 
-.mobile { 
-	display: none;  
-}	 
-#desktopToners {   
-	display: none;  
 }
-.tablet img{ 	 	  
-	width: 350px;     
+.mobile {
+	display: none;
+}
+#desktopToners {
+	display: none;
+}
+.tablet img{
+	width: 350px;
 	height: 300px;
     text-align: right;
-} 
+}
 #tabletToners img {
-    width: 350px;     
-	height: 300px;	
-     text-align: right; 
-} 
+    width: 350px;
+	height: 300px;
+     text-align: right;
+}
 p {
-	text-align: left;	    
-	font-size: 1em;   
+	text-align: left;
+	font-size: 1em;
 	margin-right: 25px;
-	margin-top: 5px; 
+	margin-top: 5px;
 	margin-bottom: 20px;
-}	  
- 
-}    
-/*End media queries for a device of (min-width: 600px) and (max-width: 799px) --------*/ 
+}
+
+}
+/*End media queries for a device of (min-width: 600px) and (max-width: 799px) --------*/
 
 /*media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
-@media screen and (min-width: 800px) and (max-width: 1208px){ 
-	 
-.desktop { 
-	display: table;  
-}   
-     
-#desktopToners {
-   display: table;      
-} 
-.tablet { 
-   display: none;    
+@media screen and (min-width: 800px) and (max-width: 1208px){
+
+.desktop {
+	display: table;
 }
-.imgCarousel {   
-	height: 200px;     
-	background: url(../images/products/productsImg.jpg) center/100% no-repeat;  
-    display: flex; 
+
+#desktopToners {
+   display: table;
+}
+.tablet {
+   display: none;
+}
+.imgCarousel {
+	height: 200px;
+	background: url(../images/products/productsImg.jpg) center/100% no-repeat;
+    display: flex;
     align-content: stretch;
-} 
+}
 .desktop h3 {
-	padding: 0;  
+	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-size: 1em;     
-}	
+	font-size: 1em;
+}
 #desktopToners h3 {
-	padding: 0;   
+	padding: 0;
 	margin: 0;
-	text-align: center; 
-	font-size: 1em;     
-}	
-.desktop td {   
-    margin: 0; 
+	text-align: center;
+	font-size: 1em;
+}
+.desktop td {
+    margin: 0;
     padding: 0;
     align-items: baseline;
     text-align: center;
     width: 33%;
-} 
-#desktopToners td {   
-    margin: 0; 
+}
+#desktopToners td {
+    margin: 0;
     padding: 0;
     align-items: baseline;
     text-align: center;
     width: 50%;
-} 
-tr  { 
+}
+tr  {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     vertical-align: top
 }
-#tableToners { 
-   display: none;     
+#tableToners {
+   display: none;
 }
-.mobile {  
-	display: none;  
-}  
-img { 
-	padding: 0;  	  
-	margin: 0 auto;    
-	width: 400px;   
-	height: 300px;	
-    display: block; 
-	  
-} 
-p {      
+.mobile {
+	display: none;
+}
+img {
+	padding: 0;
+	margin: 0 auto;
+	width: 400px;
+	height: 300px;
+    display: block;
+
+}
+p {
 	text-align: center;
-	vertical-align: middle; 
-	margin: 30px;   
-	font-size: 1em; 
-	  
-}	   
-  
-} 
+	vertical-align: middle;
+	margin: 30px;
+	font-size: 1em;
+
+}
+
+}
 /*End media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
 
- 
+
 /*media queries for a device of (min-width:1209px)--------*/
-  
-@media screen and (min-width: 1209px)   {  
-	 
-.desktop { 
-	display: table;  
-}   
-     
-#desktopToners {
-   display: table;      
-} 
-.tablet { 
-   display: none;    
+
+@media screen and (min-width: 1209px)   {
+
+.desktop {
+	display: table;
 }
-.imgCarousel {   
-	height: 200px;     
-	background: url(../images/products/productsImg.jpg) center/100% no-repeat;  
-    display: flex; 
+
+#desktopToners {
+   display: table;
+}
+.tablet {
+   display: none;
+}
+.imgCarousel {
+	height: 200px;
+	background: url(../images/products/productsImg.jpg) center/100% no-repeat;
+    display: flex;
     align-content: stretch;
-} 
+}
 .desktop h3 {
-	padding: 0;  
+	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-size: 1.3em;     
-}	
+	font-size: 1.3em;
+}
 #desktopToners h3 {
-	padding: 0;   
+	padding: 0;
 	margin: 0;
-	text-align: center; 
-	font-size: 1em;  
-}	
-.desktop td {   
-    margin: 0; 
+	text-align: center;
+	font-size: 1em;
+}
+.desktop td {
+    margin: 0;
     padding: 0;
     align-items: baseline;
     text-align: center;
     width: 33%;
-} 
-#desktopToners td {   
-    margin: 0; 
+}
+#desktopToners td {
+    margin: 0;
     padding: 0;
     align-items: baseline;
     text-align: center;
     width: 50%;
-} 
-tr  { 
+}
+tr  {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     vertical-align: top
 }
-#tableToners { 
-   display: none;     
+#tableToners {
+   display: none;
 }
-.mobile {  
-	display: none;  
-}  
-img { 
-	padding: 0;  	  
-	margin: 0 auto;    
-	width: 400px;   
-	height: 340px;	
-    display: block; 
-	 
-} 
-p {      
-	text-align: center;
-	vertical-align: middle; 
-	margin: 30px;   
-	font-size: 1.2em;
-	  
-}	     
- 
+.mobile {
+	display: none;
+}
+img {
+	padding: 0;
+	margin: 0 auto;
+	width: 400px;
+	height: 340px;
+    display: block;
 
-} 
+}
+p {
+	text-align: center;
+	vertical-align: middle;
+	margin: 30px;
+	font-size: 1.2em;
+
+}
+
+
+}
 /*End media queries for a device of (min-width: 800px)--------*/
- 

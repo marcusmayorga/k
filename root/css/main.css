@@ -256,11 +256,12 @@ footer .socialContainer {
   /*  NAV BAR */
 header {
     height: 175px;
-    position: fixed;
+    /* position: fixed; */
     z-index: 2;
   }
 .navbar-nav {
   display: block;
+  height: 40px;
 }
 .navbar {
   width: 100%;
@@ -301,6 +302,7 @@ header {
   background-color: #99826c;
   display: none;
   padding: 0;
+  z-index: 3;
 }
 .navbar-nav ul a {
   color: #fff;
@@ -335,10 +337,11 @@ header {
     /* END NAV BAR */
 
   .slider {
-  margin-top: 175px;
+  /* margin-top: 175px; */
   z-index: 0;
   height: 465px;
-  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
+  z-index: 0;
+  /* background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469); */
     }
   footer {
     height: 300px;
@@ -372,9 +375,7 @@ header {
 @media only screen and (min-width:1140px) {
 header {
   height: 135px;
-  position: fixed;
   z-index: 2;
-  top: 0;
   }
   .navbar {
     width: 818px;
@@ -386,9 +387,9 @@ header {
     top: 108px;
   }
 .slider {
-margin-top: 135px;
+/* margin-top: 135px; */
 z-index: 0;
-height: 465px;
-background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
+/* height: 465px; */
+/* background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469); */
   }
 }

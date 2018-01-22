@@ -1,46 +1,50 @@
-<!-- 
-File:  services_mua.html
-Author: Melinda Hasselbring
-date : 01/16/18
- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Services-MakeUp Artist</title>
+  <title>Kalli Alexa Skincare - Services - Make-up Artist</title>
   <!-- [if It IE9]>
 <script src="scripts/html5shiv.min.js"></script>
 <![endif]-->
-  <link rel="stylesheet" href="../css/normalize.min.css" type="text/css">
-  <link rel="stylesheet" href="../css/main.css" type="text/css">
-  <link rel="stylesheet" href="../css/services.css" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <script src="../scripts/jquery.min.js" type="text/javascript"></script>
-  <script src="../scripts/navScript.js" type="text/javascript"></script>
+<!-- BEGIN CSS -->
+  <link rel="stylesheet" href="../css/normalize.min.css" type="text/css"/>
+  <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+  <link rel="stylesheet" href="../css/slick.css" type="text/css"/>
+  <link rel="stylesheet" href="../css/slick-theme.css" type="text/css"/>
+  <link rel="stylesheet" href="../css/jquery.bxslider.css" type="text/css"> <!-- for BxSlider -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> <!--Font Awesome -->
+  <!-- END CSS -->
+
+  <script src="../scripts/jquery.min.js"></script> <!-- JQUERY -->
+  <script src="../js/jquery.bxslider.min.js"> </script><!-- for BxSlider -->
+  <script src="../scripts/navScript.js"></script><!-- for mobile slide out menu -->
+  <script src="../scripts/sideNavDrop.js"></script><!-- for mobile submenus -->
+  <script src="../scripts/bxSliderMain.js"></script><!-- for main BX slider -->
+  <!-- INDIVIDUAL PAGE CSS -->
+ <link rel="stylesheet" href="../css/services.css" type="text/css">
 
 </head>
 <body>
 <div class="container">
-  <div class="contactFixed">
+  <div class="contactFixed nav-down">
     <ul>
-      <li>(760) 356-0325</li>|
-      <li>kallialexaskincare@gmail.com</li>
+      <li>(760) 356-0325</li>
+      <li>KalliAlexaSkincare@gmail.com</li>
     </ul>
   </div>
-<header>
-  <div class="headerContain">
+<header class="nav-down">
+  <div class="headerContain"> <!-- Start headerContain -->
   <div class="logoContain">
     <h1>Kalli Alexa</h1>
     <h2>Skin Care</h2>
   </div>
 
-<!---NAVIGATION--->
-<nav class="navbar">
-  <span class="open-slide">
+<!-- START NAVIGATION -->
+
+<!-- hamburger menu -->
+<span class="open-slide">
     <a href="#" onclick="openSlideMenu()">
       <svg width="30" height="30">
         <path d="M0,5 30,5" stroke="#fff"
@@ -52,45 +56,86 @@ date : 01/16/18
       </svg>
     </a>
 </span>
+<!-- END hamburger menu -->
+
+<!-- START DESKTOP VERSION -->
+ <nav class="navbar">
   <ul class="navbar-nav">
-    <div class="group">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Specials</a></li>
-    <li><a href="#">Contact</a></li>
-    <li><a href="#">Appointments</a></li>
-  </div>
+    <li><a href="../index.html" class="nav-item">Home</a></li>
+    <li><a href="#" class="nav-item">About</a>
+          <ul>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="aboutUs.html#testimonials">Testimonials</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+    </li>
+    <li><a href="#" class="nav-item">Services</a>
+          <ul>
+            <li><a href="services_backTreatment.html">Back Treatment</a></li>
+            <li><a href="services_skincare.html">Skin Care</a></li>
+            <li><a href="services_eyelash.html">Eyelash Extensions</a></li>
+            <li><a href="services_waxing.html">Waxing</a></li>
+            <li><a href="services_mua.html">Makeup Artist</a></li>
+            <li><a href="services_mul.html">Makeup Lessions</a></li>
+          </ul>
+    </li>
+    <li><a href="products.html" class="nav-item">Products</a></li>
+    <li><a href="specials.html" class="nav-item">Specials</a></li>
+    <li><a href="contactUs.html" class="nav-item">Contact</a></li>
+    <li><a href="appointments.html" class="nav-item">Appointments</a></li>
   </ul>
 </nav>
+<!-- END DESKTOP VERSION -->
 
+<!-- START MOBILE VERSION -->
 <div id="side-menu" class="side-nav">
   <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Specials</a>
-  <a href="#">Contact</a>
-  <a href="#">Appointments</a>
+  <ul class="main-nav-ul">
+    <li><a href="../index.html">Home</a></li>
+    <li class="has-sub"><a href="#">About</span></a>
+        <ul>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="aboutUs.html#testimonials">Testimonials</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </li>
+    <li class="has-sub"><a href="#">Services</span></a>
+        <ul>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="services_backTreatment.html">Back Treatment</a></li>
+          <li><a href="services_skincare.html">Skin Care</a></li>
+          <li><a href="services_eyelash.html">Eyelash Extensions</a></li>
+          <li><a href="services_waxing.html">Waxing</a></li>
+          <li><a href="services_mua.html">Makeup Artist</a></li>
+          <li><a href="services_mul.html">Makeup Lessions</a></li>
+        </ul>
+    </li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="specials.html">Specials</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="appointments.html">Appointments</a></li>
+  </ul>
 </div>
-</div>
+<!-- END MOBILE VERSION -->
+<!-- END NAVIGATION -->
+</div><!-- end headerContain -->
 </header>
 
   <!--  START INDIVIDUAL PAGE CONTENT -->
 
    <div class="carousel">
 		<div class="imgCarousel"> </div>
-    </div> 
-     
+    </div>
+
      <section id="makeup" class="service-sec">
           <h2 id="back-treament">MAKE-UP ARTIST</h2>
-          <img id="borders"  src="../images/services/border-foot-388.png" alt="borders">     
-       
+          <img id="borders"  src="../images/services/border-foot-388a.png" alt="borders">
+
         <article  id="bridal">
             <img class="service_images"  src="../images/services/mul-wed.png" alt="bridal">
             <br>
             <h4>Bridal Make-up and Hair </h4>
-            
+
             <span class="service-fee"> $ 175.00</span><br>
             <span>Time Dur: 90 min</span>
             <br>
@@ -100,7 +145,7 @@ date : 01/16/18
             <a class="request-button" href="appointments.html">Request Reservation</a>
         </article>
 
-       
+
      <article id="stage">
            <img class="service_images"  src="../images/services/mul-nat.png" alt="traditional">
             <h4>Stage Make-up</h4>
@@ -112,7 +157,7 @@ date : 01/16/18
 
             <a class="request-button" href="appointments.html">Request Reservation</a>
         </article>
-        
+
         <article id="taditional">
            <img class="service_images"  src="../images/services/services-ps.png" alt="traditional">
             <h4>Traditional Make-up Application</h4>
@@ -124,7 +169,7 @@ date : 01/16/18
 
             <a class="request-button" href="appointments.html">Request Reservation</a>
         </article>
-        
+
         <article id="air-brush">
            <img class="service_images"  src="../images/services/mul-air.png" alt="air">
             <h4>Air Brush Make-up Application</h4>
@@ -136,7 +181,7 @@ date : 01/16/18
 
             <a class="request-button" href="appointments.html">Request Reservation</a>
         </article>
-   
+
         <article id="photo-sessions">
            <img class="service_images"  src="../images/services/mua-photo.png" alt="photo-sessions">
             <h4>Make-up for photo Sessions</h4>
@@ -148,7 +193,7 @@ date : 01/16/18
 
             <a class="request-button" href="appointments.html">Request Reservation</a>
         </article>
-        
+
         <article id="halloween">
            <img class="service_images"  src="../images/services/services-h2.png" alt="halloween">
             <h4>SFX & Halloween Make-up</h4>
@@ -160,45 +205,39 @@ date : 01/16/18
 
             <a class="request-button" href="appointments.html">Request Reservation</a>
         </article>
-    </section>   
+    </section>
 
   <!-- END INDIVIDUAL PAGE CONTENT -->
 
 
   <footer>
-    <div class="footerContain">
-        <div class="infoContainer">
+      <div class="footerContain">
+          <div class="infoContainer">
+           <h2>Kalli Alexa Location</h2>
+            <ul>
+              <li><a href="https://goo.gl/maps/Ao1eAvpdg8t" target="_blank"><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>Sola Salon 5726 La Jolla Blvd.<br />La Jolla, California 92037</a></li>
+              <li><a href="mailto:kallialexaskincare@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>kallialexaskincare@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="socialContainer">
+            <h2>Find Us On Social Media</h2>
+            <a href="https://www.facebook.com/Kallialexaskincare/" title="Facebook"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/?lang=en" title="Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          </div>
+      </div>
+    </footer>
+
+     <div class="footerCopy">
         <ul>
-          <h2>Kalli Alexa Location</h2>
-          <li><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>Sola Salon 5726 La Jolla Blvd.<br>
-            La Jolla, California 92037</li>
+          <li>Copyright &copy; 2017 Kalli Alexa Skincare</li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div><!-- End ALL footers -->
 
-          <li><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>kallialexaskincare@gmail.com
-          </li>
-
-          </ul>
-        </div>
-
-        <div class="socialContainer">
-          <h2>Find Us On Social Media</h2>
-        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        </div>
-    </div>
-
-  </footer>
-   <div class="footerCopy">
-    <ul>
-      <li>Copyright &copy; 2017 Kalli Alexa Skincare</li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-    </div>
-</div>
-</body>
-</html>
-
-Team, 
-Presentation document - Due date Friday, 5 PM
-Codes to be uploaded to the site Saturday, 3 PM
-Individual codes - Saturday, 2 PM
+    <script src="../scripts/slickSliderMain.js"></script>
+    <script src="../scripts/hideHeader.js"></script>
+    <script src="../scripts/slick.min.js"></script>
+  </body>
+  </html>
