@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
+/* 
+File:  servicesBodyTreatments.css
+Author:  
+date : 01/18/18 
+
+//////FONTS//////
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+//////COLORS//////
+#346469
+#5ca2aa
+#a6b0c0 - GRAY
+*/
+
+
+/* //////MOBILE FIRST:////// */
+* {     
+    padding: 0;  
+	box-sizing: border-box; 
+}   
+.carousel { 
+  height: 200px; 
+  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
+}
+.imgCarousel { 
+	height: 200px;    
+	background: url(../images/products/productsImg.jpg) center no-repeat;  
+    display: flex; 
+    align-content: stretch;
+} 
+section { 	
+	width: 100%; 
+	height: 100%; 
+    margin: 0 auto;        
+    font-family: 'Raleway', sans-serif; 
+	display: flex;
+	flex-direction: column;  
+	padding-bottom: 20px;
+}   
+section h1 {
+	text-align: center;
+    font-size: 2em;
+    padding-bottom: 20px;
+}  
+.tablet {  
+	display: none; 
+}   
+.desktop {  
+	display: none; 
+}  
+ 
+article  h2 { 
+	font-size: 1.5em;
+	line-height: 2; 
+	text-align: center;	 
+	color: #fff;  
+	 
+    background: radial-gradient(closest-corner at 60% 55%, #a18c78, #82705e);  
+    -webkit-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
+    -moz-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
+    box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);  
+}    
+    
+.mobile h3 {
+	padding: 0;  
+	margin: 0;
+	text-align: center;
+	font-size: 1em; 
+	}    
+
+.service_images {  
+	padding: 0;  	  
+	margin: 0 auto;   
+	padding: 15px;	 
+    -webkit-margin-before: 2em; 
+    width: 150px;
+    height: 150px;   
+	display: block;
+    max-width: 100%;
+   
+}   
+.mobile p {  
+	text-align: center;
+	vertical-align: middle;	 
+	margin-left: 25px; 
+	margin-right: 25px;
+	margin-top: 5px; 
+	margin-bottom: 20px;
+	font-size: 1em;
+}  
+.mobile .title { 
+    text-align: center;
+	vertical-align: middle;	 
+	margin-left: 25px; 
+	margin-right: 25px;
+	margin-top: 5px; 
+	margin-bottom: 20px;
+	font-size: 1em; 
+}
+.duration {  
+	color: #000; 
+	text-align: center; 
+} 
+.desc p { 
+	color: #a6b0c0;  
+	text-align: center; 
+	margin-left: 40px;        
+	margin-right: 40px;  
+	 
+} 
+
+p {
+    text-align: center;
+}
+.service-fee { 
+	color: #a3c260; 
+	font-weight: 700; 
+}  
+/* //////ENDS MOBILE ////// */
+
+/* ////// DESKTOP  ////// */  
+ 
+ 
+ /*media queries for a device of (min-width: 600px) and (max-width: 1000ppx)--------*/
+@media screen and (min-width: 600px) and (max-width: 1100px){ 
+.tablet { 
+	display: table;   
+}   
+.desktop {
+    display: none;
+}
+.mobile { 
+	display: none;  
+}
+.tablet h3 {
+	padding: 0;     
+	margin: 0; 	 
+    margin-left: 25px;  
+	padding-bottom: 5px;
+	text-align: left;
+	font-size: 1em;  
+} 
+.tablet td {
+    width: 50%; 
+    margin: 0; 
+    padding: 0;
+    align-items: center; 
+    text-align: center;  
+	padding-left: 5px;
+	padding-right: 5px;
+}  
+.tablet tr  { 
+    margin: 0;
+    padding: 0; 
+	text-align: center;
+	margin-bottom: 10px;
+    vertical-align: top;
+}   
+.tablet p {
+	text-align: left;	    
+	font-size: 1em;   
+	margin-right: 25px;
+	margin-top: 5px;  
+	margin-bottom: 20px;
+}	  
+.tablet .service_images {  
+	padding: 0;  	  
+	margin: 0 auto;    
+	padding-top: 15px;	    
+    padding-bottom: 15px;
+    padding-right: 30px;   
+    -webkit-margin-before: 2em; 
+    width: 150px;
+    height: 150px;   
+      text-align: right;  
+	display: block;
+    max-width: 100%;    
+    
+}    
+.tablet .title { 
+    text-align: left;
+	vertical-align: middle;	 	 
+	margin-top: 5px;  
+	margin-bottom: 20px;
+	font-size: 1em; 
+}
+}     
+/*End media queries for a device of (min-width: 600px) and (max-width: 1100px) --------*/ 
+
+/*media queries for a device of (min-width: 1101px)  -------*/
+@media screen and (min-width: 1101px)  {
+	 
+.desktop { 
+	display: table;  
+}     
+.tablet { 
+   display: none;    
+}
+.mobile {  
+	display: none;  
+}  
+.desktop h3 {
+	padding: 0;     
+	margin: 0; 	 
+    margin-left: 25px;  
+	padding-bottom: 5px;
+	text-align: left;
+	font-size: 1em;  
+} 
+.desktop  td {
+    width: 20%;  
+    margin: 0; 
+    padding: 0;
+    align-items: center; 
+    text-align: center;  
+	padding-left: 5px;
+	padding-right: 5px;
+}  
+.desktop tr  { 
+    margin: 0;
+    padding: 0; 
+	text-align: center;
+	margin-bottom: 10px;
+    vertical-align: top; 
+}   
+.desktop p {
+	text-align: center;	    
+	font-size: 1em;   
+	margin-right: 25px;
+	margin-top: 5px;  
+	margin-bottom: 20px;
+}	  
+.desktop .service_images {  
+	padding: 0;  	  
+	margin: 0 auto;    
+	padding-top: 15px;	    
+    padding-bottom: 15px;    
+    -webkit-margin-before: 2em; 
+    width: 150px;
+    height: 150px;       
+	display: block;
+    max-width: 100%;    
+    
+}     
+.desktop .title { 
+    text-align: center;
+	vertical-align: middle;	 	 
+	margin-top: 5px;  
+	margin-bottom: 20px;
+	font-size: 1em; 
+}  
+ 
+} 
+/*End media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
+
+  
