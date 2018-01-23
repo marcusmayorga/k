@@ -25,9 +25,9 @@ font-family: 'Raleway', sans-serif;
 }
 .imgCarousel { 
 	height: 200px;    
-	background: url(../images/products/productsImg.jpg) center no-repeat;  
+	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat;  
     display: flex; 
-    align-content: stretch;
+    align-content: stretch; 
 } 
 section { 	
 	width: 100%; 
@@ -151,7 +151,8 @@ article {
     margin: 0;
     padding: 0; 
 	text-align: center; 
-	vertical-align: middle; 
+	/*vertical-align: middle; */ 
+	vertical-align: top; 
 	margin-bottom: 20px;
      
 }   
@@ -184,6 +185,10 @@ article {
 	color: #a3c260; 
 	font-weight: 700; 
 	text-align: left;
+} 
+.tablet .desc  { 
+	color: #a6b0c0;  
+	text-align: left;  	 
 } 
 }      
 /*End media queries for a device of (min-width: 400px) and (max-width: 650px) --------*/ 
@@ -257,6 +262,10 @@ article {
 	font-weight: 700; 
 	text-align: center;
 }  
+.desktop .desc  { 
+	color: #a6b0c0;   
+	text-align: center;  	 
+} 
 } 
 /*End media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
 
