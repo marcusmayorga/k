@@ -258,7 +258,12 @@ article  h2 {
 	margin-left: 25px;
 	margin-right: 25px;
 	margin-top: 5px;   
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
+} 
+.desktop .service-fee { 
+	color: #a3c260; 
+	font-weight: 700; 
+} 
 } 
 /*End media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
 
