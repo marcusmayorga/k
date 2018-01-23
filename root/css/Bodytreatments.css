@@ -15,7 +15,6 @@ font-family: 'Raleway', sans-serif;
 
 
 /* //////MOBILE FIRST:////// */
-<<<<<<< HEAD
 
 .carousel {
   height: 200px;
@@ -23,33 +22,15 @@ font-family: 'Raleway', sans-serif;
 }
 .imgCarousel {
 	height: 200px;
-	background: url(../images/products/productsImg.jpg) center no-repeat;
+	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat;
     display: flex;
     align-content: stretch;
 }
 section {
-	width: 100%;
+	width: 100%; 
 	height: 100%;
     margin: 0 auto;
     font-family: 'Raleway', sans-serif;
-=======
-  
-.carousel { 
-  height: 200px; 
-  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
-}
-.imgCarousel { 
-	height: 200px;     
-	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat;  
-    display: flex; 
-    align-content: stretch; 
-} 
-section { 	 
-	width: 100%; 
-	height: 100%; 
-    margin: 0 auto;        
-    font-family: 'Raleway', sans-serif; 
->>>>>>> e612e612d14994ed04bf51b5c563766f210f7f60
 	display: flex;
 	flex-direction: column;
 	padding-bottom: 20px;
