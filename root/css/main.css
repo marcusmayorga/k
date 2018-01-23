@@ -7,7 +7,7 @@ font-family: 'Raleway', sans-serif;
 #346469 -
 #5ca2aa -
 #a6b0c0 - GRAY
-*/ 
+*/
 
 /* //////MOBILE FIRST LAYOUT:////// */
 body {
@@ -22,11 +22,7 @@ header {
   width: 100%;
   height: 145px;
   margin: 0; 
-  padding-top: 10px;
-  padding-left: 0;
-  padding-bottom: 10px; 
-  padding-right: 10px; 
-} 
+}
 .logoContain {
   width: fit-content;
   padding-top: 14px;
