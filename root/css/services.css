@@ -27,10 +27,6 @@ font-family: 'Raleway', sans-serif;
 
 
 /*************** MEL'S CODE *****************/
-/* * {
-    padding: 0;
-	box-sizing: border-box;
-}  */
 .carousel {
   height: 200px;
 
@@ -113,7 +109,15 @@ article p{
     border-radius: 0 10px 0 10px;
     /*  border-radius: 21px;*/
 }
-
+.appBanner {
+  width: 100%;
+  height: 200px;
+  background: url(../images/services/spaLobby2crop.jpg) no-repeat center center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
 
 
 
@@ -123,7 +127,7 @@ article p{
 
 
 @media screen and (min-width: 415px){
-    
+
 iframe.myFrame {
     width: 100%!important;
     height: 700px!important;
