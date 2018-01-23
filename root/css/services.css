@@ -119,30 +119,19 @@ article p{
  background-size: cover;
 }
 
-
-
-
-
-
-
-
+iframe.myFrame {
+   width: 100%!important;
+   height: 700px!important;
+}
+ 
 @media screen and (min-width: 415px){
 
 iframe.myFrame {
     width: 100%!important;
     height: 700px!important;
 }
-
-table  {
-    display: flex;
-    flex-direction: row;
-    display: inline-block;
-    width: 400px;
-    margin: 15px 25px 0 25px;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-}
-
+ 
+} 
 
 
 
