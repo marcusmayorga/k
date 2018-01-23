@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
 /* 
-File:  servicesBodyTreatments.css
-Author:  
+File:  servicesSkincare.css  
+Author:   
 date : 01/18/18 
 
 //////FONTS//////
@@ -25,9 +25,9 @@ font-family: 'Raleway', sans-serif;
 }
 .imgCarousel { 
 	height: 200px;    
-	background: url(../images/products/productsImg.jpg) center no-repeat;  
+	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat;  
     display: flex; 
-    align-content: stretch;
+    align-content: stretch; 
 } 
 section { 	
 	width: 100%; 
@@ -50,16 +50,11 @@ section h1 {
 	display: none; 
 }  
  
-article  h2 { 
-	font-size: 1.5em;
-	line-height: 2; 
+article  { 
+    margin-bottom: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
 	text-align: center;	 
-	color: #fff;  
-	 
-    background: radial-gradient(closest-corner at 60% 55%, #a18c78, #82705e);  
-    -webkit-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
-    -moz-box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);
-    box-shadow: 10px 10px 27px 2px rgba(45,38,31,0.54);  
 }    
 
 .mobile h3 {
@@ -84,9 +79,7 @@ article  h2 {
 	text-align: center;
 	vertical-align: middle;	 
 	margin-left: 25px; 
-	margin-right: 25px; 
-	margin-top: 5px; 
-	margin-bottom: 20px;
+	margin-right: 25px;  	 
 	font-size: 1em;
 }  
 .mobile .title { 
@@ -98,7 +91,7 @@ article  h2 {
 	margin-bottom: 20px;
 	font-size: 1em; 
 }
-.duration {  
+.mobile .duration {  
 	color: #000; 
 	text-align: center; 
 } 
@@ -109,7 +102,7 @@ article  h2 {
 	margin-right: 40px;  
 	 
 }   
-.service-fee { 
+.mobile .service-fee { 
 	color: #a3c260; 
 	font-weight: 700; 
 }  
@@ -118,8 +111,12 @@ article  h2 {
 /* ////// DESKTOP  ////// */  
  
  
- /*media queries for a device of (min-width: 600px) and (max-width: 1000ppx)--------*/
-@media screen and (min-width: 600px) and (max-width: 1100px){ 
+ /*media queries for a device of (min-width: 6500px) and (max-width: 900ppx)--------*/
+@media screen and (min-width: 650px) and (max-width: 900px){ 
+article {    
+	display: flex;  
+	justify-content: center;  
+}  
 .tablet { 
 	display: table;        
 }   
@@ -145,8 +142,8 @@ article  h2 {
     align-items: center; 
     text-align: center;  
 	padding-left: 5px;
-	padding-right: 5px;
-    vertical-align: middle;
+	padding-right: 5px; 
+    vertical-align: top;
    
 }     
 .tablet tr  { 
@@ -156,15 +153,13 @@ article  h2 {
     vertical-align: middle;  
     margin-top: 30px;
     margin-bottom: 30px
-     
-    
 }    
 .tablet p {
 	text-align: left;	    
-	font-size: 1em;   
-	margin-right: 25px;
+	font-size: 1em;  
 	margin-top: 5px;  
 	margin-bottom: 20px;
+	margin-right: 25px; 
 }	  
 .tablet .service_images {  
 	padding: 0;  	  
@@ -173,7 +168,9 @@ article  h2 {
     width: 150px;
     height: 150px;       
 	display: block;
-    max-width: 100%;    
+    max-width: 100%;   
+	float: right;
+	margin-right: 40px; 
     
 }    
 .tablet .title { 
@@ -188,15 +185,28 @@ article  h2 {
 	text-align: left;   	 
 	 
 } 
+.tablet .duration {  
+	color: #000;  
+	text-align: left; 
+} 
+ 
+.tablet .service-fee { 
+	color: #a3c260; 
+	font-weight: 700; 
+}  
 }     
-/*End media queries for a device of (min-width: 600px) and (max-width: 1100px) --------*/ 
+/*End media queries for a device of (min-width: 650px) and (max-width: 900px) --------*/ 
 
 /*media queries for a device of (min-width: 1101px)  -------*/
-@media screen and (min-width: 1101px)  {
-	 
+@media screen and (min-width: 901px)  { 
+article {    
+	display: flex;  
+	justify-content: center; 
+	flex-direction: row;
+}	 	 
 .desktop { 
 	display: table;  
-}     
+}      
 .tablet { 
    display: none;    
 }
@@ -211,8 +221,8 @@ article  h2 {
 	text-align: left;
 	font-size: 1em;  
 } 
-.desktop  td { 
-    width: 33%;    
+.desktop  td {  
+    width: 20%;    
     margin: 0; 
     padding: 0;
     align-items: center; 
@@ -259,6 +269,14 @@ article  h2 {
 	margin-left: 40px;        
 	margin-right: 40px;  
 	 
+}  
+.desktop .duration {  
+	color: #000; 
+	text-align: center; 
+}    
+.desktop .service-fee { 
+	color: #a3c260; 
+	font-weight: 700; 
 }  
 } 
 /*End media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
