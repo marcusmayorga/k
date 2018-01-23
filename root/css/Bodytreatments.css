@@ -17,17 +17,17 @@ font-family: 'Raleway', sans-serif;
 /* //////MOBILE FIRST:////// */
 * {     
     padding: 0;  
-	box-sizing: border-box; 
+	box-sizing: border-box;  
 }   
 .carousel { 
   height: 200px; 
   background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
 }
 .imgCarousel { 
-	height: 200px;    
-	background: url(../images/products/productsImg.jpg) center no-repeat;  
+	height: 200px;     
+	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat;  
     display: flex; 
-    align-content: stretch;
+    align-content: stretch; 
 } 
 section { 	
 	width: 100%; 
