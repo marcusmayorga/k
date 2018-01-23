@@ -55,6 +55,9 @@ section li {
 .dataContact {
 	margin: 0 auto;
 }
+.dataContact ul{ 
+	-webkit-padding-start: 0px;
+}
 h2 {text-align: center;font-size: 1.5em;}
 h3 {
 	font-size: 1em;
@@ -119,8 +122,11 @@ input {
     color: #98a0a0;
 }
 form ul {
-	margin-top: .45em;
-	margin-bottom: -.15em;
+	-webkit-padding-start: 0px; 
+	padding: 5px; 
+	margin-top: .45em;  
+	margin-bottom: -.15em; 
+	
 }
 /* Validation on the fields of the Form */
 .asideContact input:required {
