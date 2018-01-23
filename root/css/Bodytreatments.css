@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
-/* 
+/*
 File:  Bodytreatments.css
-Author:  
-date : 01/18/18  
+Author:
+date : 01/18/18
 
 //////FONTS//////
 font-family: 'Quicksand', sans-serif;
@@ -15,260 +15,255 @@ font-family: 'Raleway', sans-serif;
 
 
 /* //////MOBILE FIRST:////// */
-* {     
-    padding: 0;  
-	box-sizing: border-box; 
-}   
-.carousel { 
-  height: 200px; 
-  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
+
+.carousel {
+  height: 200px;
+  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
 }
-.imgCarousel { 
-	height: 200px;    
-	background: url(../images/products/productsImg.jpg) center no-repeat;  
-    display: flex; 
+.imgCarousel {
+	height: 200px;
+	background: url(../images/products/productsImg.jpg) center no-repeat;
+    display: flex;
     align-content: stretch;
-} 
-section { 	
-	width: 100%; 
-	height: 100%; 
-    margin: 0 auto;        
-    font-family: 'Raleway', sans-serif; 
+}
+section {
+	width: 100%;
+	height: 100%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
 	display: flex;
-	flex-direction: column;  
+	flex-direction: column;
 	padding-bottom: 20px;
-}   
+}
 section h1 {
 	text-align: center;
     font-size: 2em;
     padding-bottom: 20px;
-}  
+}
 article {
 	align-items: center;
 }
-.tablet {  
-	display: none; 
-}   
-.desktop {  
-	display: none; 
-}  
- 
-article  h2 {  
-	text-align: center;	  
-}    
-    
+.tablet {
+	display: none;
+}
+.desktop {
+	display: none;
+}
+
+article  h2 {
+	text-align: center;
+}
+
 .mobile h3 {
-	padding: 0;  
+	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-size: 1em; 
-	}     
+	font-size: 1em;
+	}
 
-.mobile .service_images {  
-	padding: 0;  	  
-	margin: 0 auto;   
-	padding: 15px;	 
-    -webkit-margin-before: 2em; 
+.mobile .service_images {
+	padding: 0;
+	margin: 0 auto;
+	padding: 15px;
+    -webkit-margin-before: 2em;
     width: 150px;
-    height: 150px;   
+    height: 150px;
 	display: block;
     max-width: 100%;
-   
-}   
-.mobile p {  
+
+}
+.mobile p {
 	text-align: center;
-	vertical-align: middle;	 
-	margin-left: 25px; 
+	vertical-align: middle;
+	margin-left: 25px;
 	margin-right: 25px;
-	margin-top: 5px; 
+	margin-top: 5px;
 	margin-bottom: 20px;
 	font-size: 1em;
-}  
-.mobile .title { 
-    text-align: center;
-	vertical-align: middle;	 
-	margin-left: 25px; 
-	margin-right: 25px;
-	margin-top: 5px; 
-	margin-bottom: 20px;
-	font-size: 1em; 
 }
-.mobile .duration {  
-	color: #000; 
-	text-align: center; 
-}   
-.mobile .desc   {  
-	color: #a6b0c0;  
-	text-align: center; 
-	margin-left: 40px;        
-	margin-right: 40px;  
-	 
-}  
- 
-.mobile .service-fee { 
-	color: #a3c260; 
-	font-weight: 700; 
-}  
+.mobile .title {
+    text-align: center;
+	vertical-align: middle;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-size: 1em;
+}
+.mobile .duration {
+	color: #000;
+	text-align: center;
+}
+.mobile .desc   {
+	color: #a6b0c0;
+	text-align: center;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+
+.mobile .service-fee {
+	color: #a3c260;
+	font-weight: 700;
+}
 
 .footerMul {
 	text-align: center;
 }
 /* //////ENDS MOBILE ////// */
 
-/* ////// DESKTOP  ////// */  
- 
- 
+/* ////// DESKTOP  ////// */
+
+
  /*media queries for a device of (min-width: 600px) and (max-width: 900ppx)--------*/
-@media screen and (min-width: 600px) and (max-width: 900px){ 
-article {    
-	display: flex;  
-	justify-content: center;  
+@media screen and (min-width: 600px) and (max-width: 900px){
+article {
+	display: flex;
+	justify-content: center;
 }
-.tablet { 
-	display: table;   
-}   
+.tablet {
+	display: table;
+}
 .desktop {
     display: none;
 }
-.mobile { 
-	display: none;  
+.mobile {
+	display: none;
 }
 .tablet h3 {
-	padding: 0;     
-	margin: 0; 	 
-    margin-left: 25px;  
+	padding: 0;
+	margin: 0;
+    margin-left: 25px;
 	padding-bottom: 5px;
 	text-align: left;
-	font-size: 1em;  
-} 
+	font-size: 1em;
+}
 .tablet td {
-    width: 50%; 
-    margin: 0; 
+    width: 50%;
+    margin: 0;
     padding: 0;
-    align-items: center; 
-    text-align: center;  
+    align-items: center;
+    text-align: center;
 	padding-left: 5px;
 	padding-right: 5px;
     vertical-align: middle;
-}  
-.tablet tr  {  
+}
+.tablet tr  {
     margin: 0;
-    padding: 0; 
-	text-align: center; 
+    padding: 0;
+	text-align: center;
 	margin-bottom: 20px;
     vertical-align: top;
-	padding-top: 20px; 
-}   
+	padding-top: 20px;
+}
 .tablet .desc {
-	text-align: left;	    
-	font-size: 1em; 
-	margin-bottom: 20px;
-	color: #a6b0c0; 
-	padding-right: 10px;
-}	   
-.tablet .service-fee { 
-	color: #a3c260; 
-	font-weight: 700; 
 	text-align: left;
-} 
-.tablet .duration {   
-	color: #000;  
-	text-align: left; 
-} 
-.tablet .service_images {  
-	padding: 0;  	  
-	margin: 0 auto;       
-    -webkit-margin-before: 2em; 
+	font-size: 1em;
+	margin-bottom: 20px;
+	color: #a6b0c0;
+	padding-right: 10px;
+}
+.tablet .service-fee {
+	color: #a3c260;
+	font-weight: 700;
+	text-align: left;
+}
+.tablet .duration {
+	color: #000;
+	text-align: left;
+}
+.tablet .service_images {
+	padding: 0;
+	margin: 0 auto;
+    -webkit-margin-before: 2em;
     width: 150px;
-    height: 150px;   
-    text-align: right;  
+    height: 150px;
+    text-align: right;
 	display: block;
-    max-width: 100%;   
+    max-width: 100%;
 	float: right;
 	margin-right:  20px;
-	margin-top: -140px;   
-}     
-.tablet .title { 
-    text-align: left;
-	vertical-align: middle;	 	 
-	margin-top: 5px;  
-	margin-bottom: 20px;
-	font-size: 1em; 
+	margin-top: -140px;
 }
-}     
-/*End media queries for a device of (min-width: 600px) and (max-width: 900px) --------*/ 
+.tablet .title {
+    text-align: left;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-size: 1em;
+}
+}
+/*End media queries for a device of (min-width: 600px) and (max-width: 900px) --------*/
 
 /*media queries for a device of (min-width: 901px)  -------*/
 @media screen and (min-width: 901px)  {
-article {   
-	display: flex;  
-	justify-content: center; 
+article {
+	display: flex;
+	justify-content: center;
 	flex-direction: row;
-}	 	  
-.desktop { 
-	display: table;  
-}     
-.tablet { 
-   display: none;    
 }
-.mobile {  
-	display: none;  
-}  
+.desktop {
+	display: table;
+}
+.tablet {
+   display: none;
+}
+.mobile {
+	display: none;
+}
 .desktop h3 {
-	padding: 0;     
-	margin: 0; 	 
-    margin-left: 25px;  
+	padding: 0;
+	margin: 0;
+    margin-left: 25px;
 	padding-bottom: 5px;
 	text-align: left;
-	font-size: 1em;  
-} 
+	font-size: 1em;
+}
 .desktop  td {
-    width: 20%;  
-    margin: 0; 
+    width: 20%;
+    margin: 0;
     padding: 0;
-    align-items: center; 
-    text-align: center;  
+    align-items: center;
+    text-align: center;
 	padding-left: 5px;
 	padding-right: 5px;
-}  
-.desktop tr  { 
+}
+.desktop tr  {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 	text-align: center;
 	margin-bottom: 10px;
-    vertical-align: top; 
-}     
-.desktop .service_images {  
-	padding: 0;  	  
-	margin: 0 auto;     	  
-    -webkit-margin-before: 2em; 
+    vertical-align: top;
+}
+.desktop .service_images {
+	padding: 0;
+	margin: 0 auto;
+    -webkit-margin-before: 2em;
     width: 150px;
-    height: 150px;       
+    height: 150px;
 	display: block;
-    max-width: 100%;    
-    
-}     
-.desktop .title { 
+    max-width: 100%;
+
+}
+.desktop .title {
     text-align: center;
-	vertical-align: middle;	 	 
-	margin-top: 5px;  
+	vertical-align: middle;
+	margin-top: 5px;
 	margin-bottom: 20px;
-	font-size: 1em; 
-}   
-.desktop .desc {	
-	text-align: center;	  
-	color: #a6b0c0; 
-	font-size: 1em;  
+	font-size: 1em;
+}
+.desktop .desc {
+	text-align: center;
+	color: #a6b0c0;
+	font-size: 1em;
 	margin-left: 25px;
 	margin-right: 25px;
-	margin-top: 5px;   
-	margin-bottom: 20px; 
-} 
-.desktop .service-fee { 
-	color: #a3c260; 
-	font-weight: 700; 
-} 
-} 
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.desktop .service-fee {
+	color: #a3c260;
+	font-weight: 700;
+}
+}
 /*End media queries for a device of (min-width: 800px) and (max-width: 1208px)--------*/
-
-  

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Raleway:200,300,400');
-/* 
-  
+/*
+
 File:  services_mua.css
-Author:   
+Author:
 date : 01/13/18
-   
+
 //////FONTS//////
 font-family: 'Quicksand', sans-serif;
 font-family: 'Raleway', sans-serif;
@@ -16,129 +16,124 @@ font-family: 'Raleway', sans-serif;
 
 
 /* //////MOBILE FIRST:////// */
-* {     
-    padding: 0; 
-}   
-  
 .carousel {
-  height: 200px; 
-  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);      
+  height: 200px;
+  background: radial-gradient(closest-corner at 60% 55%, #5ca2aa, #346469);
 }
-.imgCarousel { 
-	height: 200px;    
-	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat; 
-	display: flex;    
-    align-content: stretch;     
-}  
+.imgCarousel {
+	height: 200px;
+	background: url(../images/services/zen-wallpaper-hd-1500sm2.png) center no-repeat;
+	display: flex;
+    align-content: stretch;
+}
 .sectionMulTitle h1 {
 	text-align: center;
-}  
-.sectionMul {  
-	display: flex;
-    flex-direction: column; 
-	font-family: 'Raleway', sans-serif;
-    color: #000; 
-	margin-left: 5px;
-	margin-right: 5px;	
-	padding-bottom: 20px; 
 }
- 
+.sectionMul {
+	display: flex;
+    flex-direction: column;
+	font-family: 'Raleway', sans-serif;
+    color: #000;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-bottom: 20px;
+}
+
 article:after {
     content: "";
     clear: both;
     display: block;
 }
-.sectionMul{     
-  width: 100%; 
-  margin: 0 auto; 
-  height: 100%;    
+.sectionMul{
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
   margin-bottom: 20px;
-}  
+}
 .service_images{
     -webkit-margin-before: 2em;
     width: 150px;
-    height: 150px;   
-} 
+    height: 150px;
+}
 h2 {
 	text-align: center;
 	font-size: 1.5em;
-}   
+}
 h3 {
-	font-size: 1em;	 
-	color: #000; 
-}   
+	font-size: 1em;
+	color: #000;
+}
 p{
-	margin: 0; 
+	margin: 0;
 	padding-top: 10px;
-	padding-bottom: 10px;	
-	line-height: 24px; 	
+	padding-bottom: 10px;
+	line-height: 24px;
 	text-align: center;
-} 
-tr  { 
+}
+tr  {
     margin: 0;
-    padding: 0; 
+    padding: 0;
 	text-align: center;
 	margin-bottom: 10px;
     vertical-align: top;
-}  
-td {   
-    margin: 0; 
+}
+td {
+    margin: 0;
     padding: 0;
     align-items: baseline;
-    text-align: center;  
+    text-align: center;
 	padding-left: 5px;
 	padding-right: 5px;
-}  
-.duration {  
-	color: #000; 
-	text-align: center; 
-} 
-.desc p { 
-	color: #a6b0c0;  
-	text-align: center; 
-	margin-left: 40px;        
-	margin-right: 40px;  
-	 
-} 
-.service-fee { 
-	color: #a3c260; 
-	font-weight: 700; 
-} 
- 
-/* //////ENDS MOBILE ////// */ 
+}
+.duration {
+	color: #000;
+	text-align: center;
+}
+.desc p {
+	color: #a6b0c0;
+	text-align: center;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+.service-fee {
+	color: #a3c260;
+	font-weight: 700;
+}
+
+/* //////ENDS MOBILE ////// */
 
 /* ////// DESKTOP ////// */
- 
-/*media queries for a device of (min-width: 850px) --------*/
-@media screen and (min-width: 850px)  {    
-.sectionMul {
-	    margin-top: 10px;  
-	    margin-bottom: 10px;  
-        flex-direction: row;         
-       
-}
-article {         
-        flex-basis: 33%;    
-} 	 
-article { 
-		padding: 20px 15px;   
-} 
-p{
-	margin: 0; 
-	padding-top: 10px;
-	padding-bottom: 10px; 	 
-	text-align: center; 
-	   
-}  
-.duration {
-		text-align: center; 
-}
-.desc {    
-	color: #a6b0c0; 
-	margin: 0; 
-	margin-left: 20px;       
-	margin-right: 20px;   
-} 
-} 
-/*End media queries for a device of (min-width: 650px) --------*/
 
+/*media queries for a device of (min-width: 850px) --------*/
+@media screen and (min-width: 850px)  {
+.sectionMul {
+	    margin-top: 10px;
+	    margin-bottom: 10px;
+        flex-direction: row;
+
+}
+article {
+        flex-basis: 33%;
+}
+article {
+		padding: 20px 15px;
+}
+p{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+
+}
+.duration {
+		text-align: center;
+}
+.desc {
+	color: #a6b0c0;
+	margin: 0;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+}
+/*End media queries for a device of (min-width: 650px) --------*/
